@@ -1,2 +1,2 @@
 # plantography
-repo of plantography
+This is the repo of plantography.
