@@ -1,0 +1,14 @@
+{
+    "ddim_eta": 0.75,
+    "guidance_scale": 7.5,
+    "init_image": "",
+    "init_strength": 0,
+    "num_batch_images": 1,
+    "prompt": "a water lily pond, by Van Gogh",
+    "sampler": "lms",
+    "samples_per_batch": 1,
+    "seed": 3413629001,
+    "steps": 100,
+    "width": 512,
+    "height": 512
+}

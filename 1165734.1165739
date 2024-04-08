@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en"     class="pb-page"  data-request-id="63ec6291-06ad-4b17-843a-acca272e3025"  
+><head data-pb-dropzone="head"><meta name="pbContext" content=";wgroup:string:ACM Publication Websites;groupTopic:topic:acm-pubtype&gt;journal;subPage:string:Access Denial;csubtype:string:Journal;serialTopic:topic:acm-pubtype&gt;journal;requestedJournal:journal:tochi;page:string:Article/Chapter View;ctype:string:Journal Content;journal:journal:tochi;article:article:doi\:10.1145/1165734.1165739;website:website:dl-site;taxonomy:taxonomy:acm-pubtype;pageGroup:string:Publication Pages;issue:issue:doi\:10.1145/1165734"/>
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"></link><meta name="citation_journal_title" content="ACM Transactions on Computer-Human Interaction (TOCHI)"></meta><meta name="dc.Title" content="Spatial graph grammars for graphical user interfaces"></meta><meta name="dc.Creator" content="KongJun "></meta><meta name="dc.Creator" content="ZhangKang "></meta><meta name="dc.Creator" content="ZengXiaoqin "></meta><meta name="dc.Subject" content="Graph grammars; diagram parsing; spatial specification; visual languages; visual programming"></meta><meta name="dc.Description" content="In a graphical user interface, physical layout and abstract structure are two important aspects of a graph. This article proposes a new graph grammar formalism which integrates both the spatial and..."></meta><meta name="Description" content="In a graphical user interface, physical layout and abstract structure are two important aspects of a graph. This article proposes a new graph grammar formalism which integrates both the spatial and..."></meta><meta name="dc.Publisher" content="&#xA;&#x9;&#x9;ACM&#xA;&#x9;&#x9;PUB27&#xA;&#x9;&#x9;New York, NY, USA&#xA;&#x9;"></meta><meta name="dc.Date" scheme="WTN8601" content="2006-06-01"></meta><meta name="dc.Type" content="article"></meta><meta name="dc.Format" content="text/HTML"></meta><meta name="dc.Identifier" scheme="acm-id" content="1165739"></meta><meta name="dc.Identifier" scheme="doi" content="10.1145/1165734.1165739"></meta><meta name="dc.Language" content="EN"></meta><meta name="dc.Coverage" content="New York, NY, USA"></meta><meta name="keywords" content="Graph grammars,diagram parsing,spatial specification,visual languages,visual programming"></meta>
+
+
+
+
+<link rel="meta" type="application/atom+xml" href="https://doi.org/10.1145%2F1165734.1165739"></link>
+<link rel="meta" type="application/rdf+json" href="https://doi.org/10.1145%2F1165734.1165739"></link>
+<link rel="meta" type="application/unixref+xml" href="https://doi.org/10.1145%2F1165734.1165739"></link>
+
+
+
+<style id="pb-theme">
+.theme {
+
+}
+</style>
+
+<title>Spatial graph grammars for graphical user interfaces | ACM Transactions on Computer-Human Interaction</title>
+
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="robots" content="noarchive,noindex,nofollow"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:title" content="Spatial graph grammars for graphical user interfaces | ACM Transactions on Computer-Human Interaction"/>
+    
+
+
+        <meta property="og:type" content="Article"/>
+    
+
+
+        <meta property="og:url" content="https://dl.acm.org/doi/10.1145/1165734.1165739"/>
+    
+
+        <meta property="og:image" content="https://dl.acm.org/cms/asset/8d306e4f-a18c-440f-9072-3ab73cd81be8/large_placeholder_cover.png" />
+        
+            <meta property="og:image:width" content="302" />
+            <meta property="og:image:height" content="391" />
+        
+    
+
+
+        <meta property="og:site_name" content="ACM Transactions on Computer-Human Interaction"/>
+    
+
+
+        <meta property="og:description" content="
+		In a graphical user interface, physical layout and abstract structure are two important
+aspects of a graph. This article proposes a new graph grammar formalism which integrates
+both the spatial and structural specification mechanisms in a single ..."/>
+    
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="/products/acm/releasedAssets/css/build-d64ad4d5825611bcbc62.css"/><link rel="stylesheet" href="/products/acm/releasedAssets/css/print-d64ad4d5825611bcbc62.css" media="print"/>
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="/pb-assets/styles/acm-custom-1697224855767.css">
+<link rel="stylesheet" href="/pb-assets/styles/journals-colors-1693404664943.css">
+<link rel="stylesheet" href="/pb-assets/styles/conferences-colors-1693402979777.css">
+<link rel="stylesheet" href="/pb-assets/styles/magazines-colors-1693402979777.css">
+<link rel="stylesheet" href="/pb-assets/styles/sigs-colors-1693402980330.css">
+<script defer src="https://scholar.google.com/scholar_js/casa.js" async></script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d5e9e377-b0f2-49fd-b006-d86d5073d17e" data-blockingmode="auto" type="text/javascript"></script>
+<script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("1083010732");
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/pb-assets/head-metadata/apple-touch-icon-1574252172393.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pb-assets/head-metadata/favicon-32x32-1574252172003.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pb-assets/head-metadata/favicon-16x16-1574252172937.png">
+<link rel="manifest" href="/pb-assets/head-metadata/site-1574252171130.webmanifest" crossorigin="use-credentials">
+<link rel="mask-icon" href="/pb-assets/head-metadata/safari-pinned-tab-1574252171193.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="theme-color" content="#ffffff">
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6e539318ac0a38db","token":"b7f168b3cd354a55a4dd51b513830799","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7f51c78ba8dacf41","token":"3bb0add5452d43a2b5d4b3d6c628944c","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager -->
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFGCMX');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+
+</head>
+<body class="pb-ui">
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFGCMX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    if(false) {
+        document.getElementById("skipNavigationLink").onclick =function skipElement () {
+            var element = document.getElementById('');
+            if(element == null || element == undefined) {
+                element = document.getElementsByClassName('').item(0);
+            }
+            element.setAttribute('tabindex','0');
+            element.focus();
+
+        }
+
+    }
+
+</script>
+
+
+
+
+
+<a href="#skip-to-main-content" class="sr-only-focusable">skip to main content</a>    <div id="pb-page-content" data-ng-non-bindable>
+        <div data-pb-dropzone="main" data-pb-dropzone-name="Main">
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+        <header data-widget-def="ux3-layout-widget" data-widget-id="88f434fd-b4d9-4f0e-b7b6-cde0fadcc9ef" class="header base tochi">
+        
+
+
+
+        
+        <div class="header__fixed-items fixed fixed-element">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="c844bab8-b1d5-4df4-8bea-71f6156459e4" class="container header--first-row">
+        
+
+
+
+        
+        <div class="pull-left">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="83eada61-9003-4cb3-99a8-a38fa7692761" class="header__logo1">
+        
+
+
+
+        
+        <a href="/" title=""><img id="" alt="ACM Digital Library home" src="/specs/products/acm/releasedAssets/images/acm-dl-logo-white.png" loading="eager"/></a>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="5517ee17-e847-46ff-b42e-c5a6754e032d" class="header__logo2">
+        
+
+
+
+        
+        <a href="https://www.acm.org" title=""><img id="" alt="ACM home" src="specs/products/acm/releasedAssets/images/acm-logo-1.png" loading="eager"/></a>
+
+        </div>
+    
+</div><div class="pull-right">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="ab4ba9a1-6e57-4b90-b9c2-fc7914d9a3a1" class="header__quick-menu text-onDark">
+        
+
+
+
+        
+        <ul class="rlist--inline"><li class="advanced-search-link hidden-lg hidden-md hidden-sm">
+
+
+
+        
+        <a href="/search/advanced" >Advanced Search</a>
+</li><li class="show-on-mobile">
+
+
+
+        
+        <a href="/browse/" title="browse by title or publisher">Browse</a>
+</li><li class="show-on-mobile">
+
+
+
+        
+        <a href="/about" title="About the ACM Digital Library">About</a>
+</li><li class="login-list">
+
+
+
+        
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="dropBlock loginBar login-open">
+    <ul class="rlist--inline">
+        <li class="login-link">
+            <a href="/action/showLogin?redirectUri=%2Fdoi%2Fpdf%2F10.1145%2F1165734.1165739">
+                Sign in
+            </a>
+        </li>
+        <li class="register-link">
+            
+                    <a href="https://accounts.acm.org?redirectUri=%2Fdoi%2Fpdf%2F10.1145%2F1165734.1165739" class="btn" title="Register">
+                        Register
+                    </a>
+                
+        </li>
+    </ul>
+</div>
+
+
+
+    
+
+</li></ul>
+
+        </div>
+    
+</div>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="menuWidget" data-widget-id="13da1316-80a7-4370-a291-8968cd9cb35e" class="container header--second-row">
+        
+
+
+
+        
+        <div class="responsive-menu-container clearfix"><div class="left-section pull-left"></div><div class="menu-section"><div class="main-nav responsive-menu-nav"><a href="#global-menu" data-target="global-menu" data-toggle="nav" title="menu drawer"><span class="drawer__icons-box"><span class="drawer__icons-controls"></span></span></a><nav role="navigation" id="global-menu" data-ctrl-res="screen-sm" aria-label="Main Navigation" class="drawer__nav container gutterless hidden-sm hidden-xs"><ul id="menubar" role="menubar" class="menubar rlist--inline"><li role="menuitem" class="hidden-lg hidden-md"><div data-toggle="transplant" data-target-class="hidden-xs hidden-sm" data-target=".header--second-row .quick-search--form" data-direction="from" data-transplant="self" class="quick-search-mobile"></div></li><li role="menuitem" aria-label="Advanced Search" id="menu-item-global-menu-0" class="menu-item mobile-menu-item"><a href="/search/advanced"><span>Advanced Search</span></a></li><li role="menuitem" aria-label="Journals" id="menu-item-global-menu-1" class="menu-item"><a href="/journals"><span>Journals</span></a></li><li role="menuitem" aria-label="Magazines" id="menu-item-global-menu-2" class="menu-item"><a href="/magazines"><span>Magazines</span></a></li><li role="menuitem" aria-label="Proceedings" id="menu-item-global-menu-3" class="menu-item"><a href="/proceedings"><span>Proceedings</span></a></li><li role="menuitem" aria-label="Books" id="menu-item-global-menu-4" class="menu-item"><a href="/acmbooks"><span>Books</span></a></li><li role="menuitem" aria-label="SIGs" id="menu-item-global-menu-5" class="menu-item"><a href="/sigs"><span>SIGs</span></a></li><li role="menuitem" aria-label="Conferences" id="menu-item-global-menu-6" class="menu-item"><a href="/conferences"><span>Conferences</span></a></li><li role="menuitem" aria-label="People" id="menu-item-global-menu-7" class="menu-item"><a href="/people"><span>People</span></a></li><li role="menuitem" class="hidden-lg hidden-md"><div data-toggle="transplant" data-target-class="hidden-xs hidden-sm" data-target=".header__quick-menu .show-on-mobile" data-direction="from" data-transplant="self"></div></li><li role="menuitem" aria-haspopup="true" aria-label="More" class="dropdown-more hidden dropdown menu-parent"><a href="#" title="More" data-toggle="dropdown" class="dropdown__toggle"><span>More</span><i aria-hidden="true" class="icon-section_arrow_d pull-right hidden-sm hidden-xs"></i></a><ul aria-labelledby="main0-1" aria-hidden="true" role="menu" class="rlist dropdown__menu"></ul></li><li role="menuitem" class="menubar__extra-mob-links"></li></ul></nav></div></div><div class="right-section pull-right">
+
+
+
+        
+        <div class="quickSearchFormContainer"><div class="quick-search"><div class="clearfix quick-search__clearfix"><form action="/action/doSearch" name="defaultQuickSearch" method="get" title="Quick Search" class="quick-search--form"><div class="quick-search--input"><div class="input-group option-0"><label for="AllFieldf73847c0-d936-48ec-9bf9-139b3828507f" class="sr-only">Search ACM Digital Library</label><input id="AllFieldf73847c0-d936-48ec-9bf9-139b3828507f" type="search" name="AllField" placeholder="Search ACM Digital Library" data-auto-complete-max-words="7" data-auto-complete-max-chars="32" data-contributors-conf="3" data-topics-conf="3" data-publication-titles-conf="3" data-history-items-conf="3" data-group-titles-conf="3" value="" class="autocomplete quick-search__input"/></div></div><div class="quick-search--button"><button type="submit" title="Search" aria-label="Search" class="btn quick-search__button icon-Icon_Search"><span class="sr-only">Search</span><span>Search</span></button></div></form></div>
+
+
+
+        
+        <a class="quick-search__advancedHeader" title="link to Advanced Search form" href="/search/advanced">Advanced Search</a>
+</div></div>
+</div></div><div class="header__dropzone"></div>
+
+        </div>
+    
+
+
+
+
+        
+        <div class="sub-nav fixed-element"><a href="#" data-db-target-for="sub-nav__items" class="sub-nav__toggle hidden-lg"><span>ACM Transactions on Computer-Human Interaction</span></a><div class="sub-nav__container"><div class="container"><div data-ctrl-res="screen-md" class="responsive-menu-container"><div class="left-section pull-left"></div><div class="menu-section"><div style="display: block" class="responsive-menu-nav"><nav id="sub-nav__items" data-db-target-of="sub-nav__items" class="sub-nav__holder drawer__nav"><ul role="menu" class="rlist--inline menubar"><li role="menuitem"><a title="Journal Home" href="/journal/tochi" class="sub-nav__item">Journal Home</a></li><li role="menuitem" title="Just Accepted"><a title="Just Accepted" href="/toc/tochi/justaccepted" class="sub-nav__item">Just Accepted</a></li><li role="menuitem" title="Latest Issue"><a title="Latest Issue" href="/toc/tochi/current" class="sub-nav__item">Latest Issue</a></li>
+
+
+
+        
+        <li role="menuitem" style="display: none; visibility: hidden;"></li>
+<li role="menuitem" title="Archive"><a title="Archive" href="/loi/tochi" class="sub-nav__item">Archive</a></li><li role="menuitem" class="dropdown menu-parent"><div class="base dropBlock"><a title="Authors" href="/journal/tochi#" data-db-target-for="subItemsList-0" data-db-switch="none" class="inline-icon sub-nav__item dropdown__toggle">Authors<i aria-hidden="true" class="icon-section_arrow_d"></i></a></div><div data-db-target-of="subItemsList-0" class="dropBlock__holder sub-items-list"><ul role="menu" class="rlist dropdown__menu"><li role="menuitem"><a title="Author Guidelines" href="/journal/tochi/author-guidelines" class="sub-nav__item">Author Guidelines</a></li><li role="menuitem"><a title="Calls for Papers" href="/journal/tochi/calls-for-papers" class="sub-nav__item">Calls for Papers</a></li><li role="menuitem"><a title="Submission Site" href="https://mc.manuscriptcentral.com/tochi" class="sub-nav__item external_link">Submission Site</a></li><li role="menuitem"><a title="ACM Author Policies" href="https://authors.acm.org/journals/rights-policies" class="sub-nav__item external_link">ACM Author Policies</a></li></ul></div></li><li role="menuitem" class="dropdown menu-parent"><div class="base dropBlock"><a title="Editors" href="/journal/tochi#" data-db-target-for="subItemsList-1" data-db-switch="none" class="inline-icon sub-nav__item dropdown__toggle">Editors<i aria-hidden="true" class="icon-section_arrow_d"></i></a></div><div data-db-target-of="subItemsList-1" class="dropBlock__holder sub-items-list"><ul role="menu" class="rlist dropdown__menu"><li role="menuitem"><a title="Editorial Board" href="/journal/tochi/editorial-board" class="sub-nav__item">Editorial Board</a></li><li role="menuitem"><a title="Associate Editors Welcome Video" href="https://youtu.be/_svVVsJeCS0" class="sub-nav__item external_link">Associate Editors Welcome Video</a></li></ul></div></li><li role="menuitem" class="dropdown menu-parent"><div class="base dropBlock"><a title="Reviewers" href="/journal/tochi#" data-db-target-for="subItemsList-2" data-db-switch="none" class="inline-icon sub-nav__item dropdown__toggle">Reviewers<i aria-hidden="true" class="icon-section_arrow_d"></i></a></div><div data-db-target-of="subItemsList-2" class="dropBlock__holder sub-items-list"><ul role="menu" class="rlist dropdown__menu"><li role="menuitem"><a title="Reviewer Guidelines" href="/journal/tochi/reviewer-guidelines" class="sub-nav__item">Reviewer Guidelines</a></li></ul></div></li><li role="menuitem" class="dropdown menu-parent"><div class="base dropBlock"><a title="About" href="/journal/tochi#" data-db-target-for="subItemsList-3" data-db-switch="none" class="inline-icon sub-nav__item dropdown__toggle">About<i aria-hidden="true" class="icon-section_arrow_d"></i></a></div><div data-db-target-of="subItemsList-3" class="dropBlock__holder sub-items-list"><ul role="menu" class="rlist dropdown__menu"><li role="menuitem"><a title="Charter" href="/journal/tochi/charter" class="sub-nav__item">Charter</a></li><li role="menuitem"><a title="Abstracting/Indexing" href="/journal/tochi/indexing" class="sub-nav__item">Abstracting/Indexing</a></li><li role="menuitem"><a title="TOCHI Author List" href="/journal/tochi/authors" class="sub-nav__item">TOCHI Author List</a></li><li role="menuitem"><a title="TOCHI Affiliations" href="/journal/tochi/affiliations" class="sub-nav__item">TOCHI Affiliations</a></li><li role="menuitem"><a title="TOCHI Best Paper Awards" href="/journal/tochi/announcements" class="sub-nav__item">TOCHI Best Paper Awards</a></li><li role="menuitem"><a title="ACM Award Winners" href="/journal/tochi/award-winners" class="sub-nav__item">ACM Award Winners</a></li></ul></div></li><li role="menuitem"><a title="Contact Us" href="/journal/tochi/author-guidelines#contact-us" class="sub-nav__item">Contact Us</a></li><li role="menuitem" aria-haspopup="true" aria-label="More" class="dropdown-more hidden dropdown menu-parent"><a href="#" title="More" class="dropdown__toggle hidden-md hidden-sm hidden-xs"><span>More</span><i aria-hidden="true" class="icon-section_arrow_d"></i></a><ul aria-labelledby="main0-1" aria-hidden="true" role="menu" class="rlist dropdown__menu visible-md visible-sm visible-xs"></ul></li></ul></nav></div></div><div class="right-section hidden-md hidden-sm hidden-xs"></div></div></div>
+
+
+
+        
+        <div id="temp-prog" class="hidden-xs hidden-sm">
+    <div class="progress-bar--wrapper">
+        <div style="width: 0.116818%;" class="progress-bar"></div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener("load", function() {
+        document.getElementsByClassName('sub-nav__container')[0].appendChild(document.getElementById('temp-prog'));
+    });        
+</script>
+</div></div>
+</div><div></div><div class="banner"></div><div class="header-breadcrumb">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="f5f275c5-a862-48bf-8119-8528d04615da" class="container">
+        
+
+
+
+        
+        <div>
+
+
+
+        
+        <nav aria-label="Breadcrumbs" class="article__breadcrumbs separator"><ul><li><a href="https://dl.acm.org/" class="article__tocHeading">Home</a></li><li><a href="/journals" class="article__tocHeading">ACM Journals</a></li><li><a href="/journal/tochi" class="article__tocHeading">ACM Transactions on Computer-Human Interaction</a></li><li><a href="/toc/tochi/2006/13/2" class="article__tocHeading">Vol. 13, No. 2</a></li><li><a href="/doi/pdf/10.1145/1165734.1165739" aria-current="page" class="article__tocHeading">Spatial graph grammars for graphical user interfaces</a></li></ul></nav>
+</div>
+
+        </div>
+    
+</div>
+
+        </header>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="84fac94e-a290-4bf2-9ff9-7edc8316a494" id="skip-to-main-content">
+        
+
+
+
+        
+        <main class="content tochi loi-page no-margin">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-accessDenial-widget" data-widget-id="8e46140b-7e42-4c62-9295-13ae241fcad0" class="container">
+        
+
+
+
+        
+        <article data-enable-mathjax="true" data-citationInfo="/action/acmCitationInfo?widgetId=8e46140b-7e42-4c62-9295-13ae241fcad0&ajax=true&doi=10.1145%2F1165734.1165739&pbContext=%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BsubPage%3Astring%3AAccess+Denial%3Bcsubtype%3Astring%3AJournal%3BserialTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BrequestedJournal%3Ajournal%3Atochi%3Bpage%3Astring%3AArticle%2FChapter+View%3Bctype%3Astring%3AJournal+Content%3Bjournal%3Ajournal%3Atochi%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F1165734.1165739%3Bwebsite%3Awebsite%3Adl-site%3Btaxonomy%3Ataxonomy%3Aacm-pubtype%3BpageGroup%3Astring%3APublication+Pages%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F1165734" data-proceedingInfo="/action/proceedingArticleMeta?widgetId=8e46140b-7e42-4c62-9295-13ae241fcad0&ajax=true&doi=10.1145%2F1165734.1165739&pbContext=%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BsubPage%3Astring%3AAccess+Denial%3Bcsubtype%3Astring%3AJournal%3BserialTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BrequestedJournal%3Ajournal%3Atochi%3Bpage%3Astring%3AArticle%2FChapter+View%3Bctype%3Astring%3AJournal+Content%3Bjournal%3Ajournal%3Atochi%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F1165734.1165739%3Bwebsite%3Awebsite%3Adl-site%3Btaxonomy%3Ataxonomy%3Aacm-pubtype%3BpageGroup%3Astring%3APublication+Pages%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F1165734"><div class="row"><div class="col-md-2 col-sm-3"></div><div class="col-md-8 col-sm-7"><div class="article-citations"><div class="citation"><div class="issue-item__citation clearfix"><span class="issue-heading">article </span><span class="article__access ml-3"><span></span></span>
+
+
+
+        
+        <!-- Go to https://www.addtoany.com/buttons/customize/ to customize your tools --><script type="text/javascript" defer="defer" src="https://static.addtoany.com/menu/page.js"></script><div class="share__block share__inline-links"><div class="pb-dropzone" data-pb-dropzone="shareBlock" title="shareBlock"></div><span class="sr-only">Share on</span><ul class="rlist--inline a2a a2a_kit a2a_kit_size_32 a2a_default_style"><li class="a2a_listitem_custom"><a role="link" title="twitter" class="a2a_button_twitter"><i aria-hidden="true" class="at-icon-wrapper icon-Icon_Twitter"></i></a></li><li class="a2a_listitem_custom"><a role="link" title="linkedin" class="a2a_button_linkedin"><i aria-hidden="true" class="at-icon-wrapper icon-linkedin"></i></a></li><li class="a2a_listitem_custom"><a role="link" title="reddit" class="a2a_button_reddit"><i aria-hidden="true" class="at-icon-wrapper icon-riddit-filled"></i></a></li><li class="a2a_listitem_custom"><a role="link" title="facebook" class="a2a_button_facebook"><i aria-hidden="true" class="at-icon-wrapper icon-Icon_Facebook"></i></a></li><li class="a2a_listitem_custom"><a role="link" title="email" class="a2a_button_email"><i aria-hidden="true" class="at-icon-wrapper icon-Icon_mail"></i></a></li><div class="pb-dropzone" data-pb-dropzone="share-additional-links" title="share-additional-links"></div></ul></div>
+</div><div class="border-bottom clearfix"><h1 class="citation__title">Spatial graph grammars for graphical user interfaces</h1></div><div class="border-bottom clearfix"> <div id="sb-1"> <ul data-lines="2" ariaa-label="authors" class="rlist--inline loa truncate-list"> <li class="label"><b>Authors: </b></li> <li class="loa__item"><a id="arnd_32313301085851317_Ctrl" href="javascript:void(0);" aria-controls="arnd_32313301085851317" aria-haspopup="true" class="author-name" title="Jun Kong"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true"/>Jun Kong</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_32313301085851317" data-doi="10.1145/contrib-81408600332">The North Dakota State University, ND</p></span></span></a><div id="arnd_32313301085851317" aria-labelledby="arnd_32313301085851317_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d81610038e14"></div> <div class="author-info__body"> <p data-pill-inst="d81610038e14" data-doi="10.1145/contrib-81408600332">The North Dakota State University, ND</p><a href="/profile/81408600332" class="btn blue stretched">View Profile</a></div> </div><span>,</span></li> <li class="loa__item"><a id="arnd_32313301089639670_Ctrl" href="javascript:void(0);" aria-controls="arnd_32313301089639670" aria-haspopup="true" class="author-name" title="Kang Zhang"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/do/10.1145/contrib-81350576955/rel-imgonly/kangportrait09.jpg" width="24" height="24" alt="" aria-hidden="true"/>Kang Zhang</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_32313301089639670" data-doi="10.1145/contrib-81350576955">The University of Texas at Dallas, TX</p></span></span></a><div id="arnd_32313301089639670" aria-labelledby="arnd_32313301089639670_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d81610038e23"></div> <div class="author-info__body"> <p data-pill-inst="d81610038e23" data-doi="10.1145/contrib-81350576955">The University of Texas at Dallas, TX</p><a href="/profile/81350576955" class="btn blue stretched">View Profile</a></div> </div><span>,</span></li> <li class="loa__item"><a id="arnd_32313301093469167_Ctrl" href="javascript:void(0);" aria-controls="arnd_32313301093469167" aria-haspopup="true" class="author-name" title="Xiaoqin Zeng"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true"/>Xiaoqin Zeng</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_32313301093469167" data-doi="10.1145/contrib-81319505316">The University of Texas at Dallas, Nanjing, China</p></span></span></a><div id="arnd_32313301093469167" aria-labelledby="arnd_32313301093469167_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d81610038e32"></div> <div class="author-info__body"> <p data-pill-inst="d81610038e32" data-doi="10.1145/contrib-81319505316">The University of Texas at Dallas, Nanjing, China</p><a href="/profile/81319505316" class="btn blue stretched">View Profile</a></div> </div> </li> </ul><a href="#pill-authors__contentcon" data-slide-target="#pill-information" data-full-screen="false" data-ctrl-res="screen-xlg" data-tab="pill-authors__content" data-label="<i class='icon-Icon_Information'&gt;</i&gt; Information &amp; Authors" class="loa__link w-slide__btn tab-link slide-active">Authors Info &amp; Claims </a></div> </div> <div class="border-bottom clearfix"><div class="issue-item__detail"><a href="/toc/tochi/2006/13/2" title="ACM Transactions on Computer-Human Interaction"><span class="epub-section__title">ACM Transactions on Computer-Human Interaction</span></a><a href="/toc/tochi/2006/13/2"><span class="comma-separator"><span>Volume 13</span></span></a><a href="/toc/tochi/2006/13/2"><span class="comma-separator"><span>Issue 2</span></span></a><span class="dot-separator"><span class="epub-section__pagerange">pp   268–307</span></span><span class="dot-separator"><a href="https://doi.org/10.1145/1165734.1165739" class="issue-item__doi">https://doi.org/10.1145/1165734.1165739</a></span></div></div><div class="border-bottom clearfix"><span class="bold label">Published:</span><span class="CitationCoverDate">01 June 2006</span><a href="#" data-slide-target="#pill-information" data-ctrl-res="screen-xlg" data-full-screen="false" data-tab="pill-information__content" data-label="&lt;i class='icon-Icon_Information '&gt;&lt;/i&gt;Information &amp; Authors" class="publication-history-link w-slide__btn tab-link">Publication History</a><a data-target="crossmark"><img alt="Check for updates on crossmark" src="/specs/products/acm/releasedAssets/images/CROSSMARK_Color_horizontal-af7f62da74558dc5bb646a88e85ed60d.svg" class="crossmark__logo mt-sm-2 mt-xs-2 ml-lg-5"/></a></div><div class="border-bottom clearfix"><div class="issue-item__footer"><div class="issue-item__footer-info pull-left"><div tabindex="0" class="tooltip"><ul title="Click to stay open" class="rlist--inline"><li><span class="citation"><i aria-hidden="true" class="icon-quote"></i><span>56</span><span class="sr-only">citation</span></span></li><li><span class="metric"><i aria-hidden="true" class="icon-metric"></i><span>1,446</span></span></li><li><span class="sr-only">Downloads</span></li></ul><div class="tooltip__body"><span class="arrow"></span><div class="left-bordered-title">Metrics</div><a href="#" data-slide-target="#pill-metric" data-ctrl-res="screen-xlg" data-full-screen="false" data-tab="pill-citations__content" title="See Bibliometrics &amp; Citations section" data-label="&lt;i class=&quot;icon-metric &quot;&gt;&lt;/i&gt;Bibliometrics &amp; Citations" class="w-slide__btn tab-link"><div class="citation">Total Citations<span class="bold">56</span></div></a><a href="#" data-slide-target="#pill-metric" data-ctrl-res="screen-xlg" data-full-screen="false" data-tab="pill-bibliometrics__content" title="See Bibliometrics &amp; Citations section" data-label="&lt;i class=&quot;icon-metric &quot;&gt;&lt;/i&gt;Bibliometrics &amp; Citations" class="w-slide__btn tab-link"><div class="metric">Total Downloads<span class="bold">1,446</span></div></a><div class="info">Last 12 Months<span class="bold">12</span></div><div class="info">Last 6 weeks<span class="bold">6</span></div></div></div></div><div class="issue-item__footer-links pull-right"><ul class="rlist--inline">
+
+
+
+        
+        <li role="menu" class="article-tool"><a id="manageAlert__crtl" href="/action/addCitationAlert?doi=10.1145/1165734.1165739" data-toggle="modal" role="menuitem" data-title="Get Citation Alerts" data-target="#manageAlert" aria-label="Get Citation Alerts" class="btn--icon simple-tooltip__block--b"><i aria-hidden="true" class="icon-Icon_Alerts"></i><span class="visibility-hidden">Get Citation Alerts</span></a><div role="dialog" aria-labelledby="id-hatemile-navigation-6073290063892647-6" class="ux-modal-container"><div id="manageAlert" class="modal"><div class="modal__dialog"><div class="modal__dialog--success hidden"><div class="modal__header"><button type="button" data-dismiss="modal" aria-label="close popup" class="close"><i aria-hidden="true" class="icon-close_thin"></i></button><a id="id-hatemile-navigation-6073290063892647-7" name="id-hatemile-navigation-6073290063892647-7" data-headinganchorfor="id-hatemile-navigation-6073290063892647-6" class="heading-anchor"></a><h2 id="id-hatemile-navigation-6073290063892647-6">New Citation Alert added!</h2></div><div class="modal__body"><p>This alert has been successfully added and will be sent to:<span class="email"></span></p><p>You will be notified whenever a record that you have chosen has been cited.</p></div><div class="modal__footer"><p>To manage your alert preferences, click on the button below.</p><a href="/action/showPreferences?menuTab=Alerts" title="Manage my Alerts" id="id-hatemile-display-1019331959102511-5" class="btn blue big stretched manageAlert__btn"><span data-attributetitleof="id-hatemile-display-1019331959102511-5" class="force-read-before">Manage my Alerts</span></a></div></div><div class="modal__dialog--error hidden"><div class="modal__header"><button type="button" data-dismiss="modal" aria-label="close popup" class="close"><i aria-hidden="true" class="icon-close_thin"></i></button><a id="id-hatemile-navigation-6073290063892647-9" name="id-hatemile-navigation-6073290063892647-9" data-headinganchorfor="id-hatemile-navigation-6073290063892647-8" class="heading-anchor"></a><h2 id="id-hatemile-navigation-6073290063892647-8">New Citation Alert!</h2></div><div class="modal__body"><p>Please <a href="/action/showLogin?redirectUri=/doi/pdf/10.1145/1165734.1165739" title="Sign In" class="link">log in to your account</a></p></div></div></div></div></div></li>
+<li role="menu" class="article-tool"><a href="javascript:void(0)" role="menuitem" data-title="Save to Binder" data-db-target-for="save-to-binder" data-link="/action/binderList?doi=10.1145/1165734.1165739" aria-label="save to binder" class="btn--icon simple-tooltip__block--b saveToBinders"><i aria-hidden="true" class="icon-add-folder"></i><span class="visibility-hidden">Save to Binder</span></a><div data-db-target-of="save-to-binder"><div class="saveToBinders-list"><input type="hidden" name="doiVal" value="10.1145/1165734.1165739"/><button type="button" data-dismiss="modal" class="close"><i aria-hidden="true" aria-label="close popup" class="icon-close_thin"></i></button><h5>Save to Binder</h5><div class="binder-list-alerts"></div><div class="saveToBinders-list__container"><ul class="rlist saveToBinders-list__items"><div class="loader"><img src="/specs/products/acm/releasedAssets/images/loader-7e60691fbe777356dc81ff6d223a82a6.gif"/></div></ul></div><div class="binder__create"><a data-action="show" href="/action/showMyBinders" title="Create a New Binder" class="show-binder-form toggle-binder-form"><i class="icon-plus-light"></i>Create a New Binder</a><div class="binder-create-form binder__create-mini-form"><div class="input-group input-group--gray-bg"><label>Name</label><div class="input-group__field-container--right-icon"><input type="text" placeholder="My new Binder" name="binderName" data-maxChar="256" class="binder-create-form__name charCount__text form-control"/><span class="input-group-addon input-group-addon--right"><span class="charLimit"></span></span></div></div><div><ul class="rlist--inline binder__create-btns-container"><li><button type="reset" value="Cancel" data-action="hide" class="toggle-binder-form btn btn--border-less btn transparent binder__create-cancel">Cancel</button></li><li class="pull-right"><button type="submit" value="Create Binder" disabled="disabled" data-append-newbinder-link="/action/createBinder" class="btn btn--no-margin blue big binder__create-submit binder-create-form__create"><i aria-hidden="true" class="icon-plus-light"></i>Create</button></li></ul></div></div></div></div></div></li><li role="menu" class="article-tool"><a href="/" role="menuitem" data-title="Export Citation" data-toggle="modal" data-target="#exportCitation" aria-label="Export Citations" class="btn--icon simple-tooltip__block--b"><i aria-hidden="true" class="icon-quote"></i><span class="visibility-hidden">Export Citation</span><input type="hidden" name="doiVal" value="10.1145/1165734.1165739"/></a></li><li class="publisher-site article-tool"><a href="#" class="btn blue"><span>Publisher Site</span><i aria-hidden="true" class="icon-export"></i></a></li></ul><ul class="rlist--inline right"><li><input type="hidden" id="formatsCount" value="0"/></li></ul></div></div></div></div></div></div><div class="col-sm-2"></div></div><div class="row"><div class="col-md-2 col-sm-3 sidebar-section article-sidebar-section"><div class="article__sections"><div class="sections-box"><div><div class="sections-box__static-items"><div class="parent-item"><h2 class="parent-item__title"><a href="/journal/tochi" data-lines="2" data-title="ACM Transactions on Computer-Human Interaction" class="simple-tooltip__inline--r truncate-text-css">ACM Transactions on Computer-Human Interaction</a></h2><a href="/toc/tochi/2006/13/2" data-lines="2" data-title="Volume 13, Issue 2" class="vol-issue simple-tooltip__inline--r truncate-text-css"><span>Volume 13, Issue 2</span></a></div>
+
+
+
+        
+        <div class="content-navigation clearfix"><a href="/doi/10.1145/1165734.1165738" title="Previous item in TOC" class="content-navigation__btn--pre "><span><i class="icon-Arrow-Stroke"></i></span><span class="control">Previous</span><span class="type">Article</span></a><a href="javascript:void(0)" title="Next item in TOC" class="content-navigation__btn--next  content-navigation__btn--disabled"><span class="control">Next</span><span class="type">Article</span><span><i class="icon-Arrow-Stroke"></i></span></a></div>
+</div><div class="sections-block scroll-to-target"></div></div><div class="logo"><img src="/specs/products/acm/releasedAssets/images/footer-logo1-45ae33115db81394d8bd25be65853b77.png" alt="ACM Digital Library" title="ACM Digital Library"/></div></div></div></div><div class="col-md-8 col-sm-7 sticko__side-content"><div class="stickybar__original__position"></div><nav class="stickybar coolBar trans visible-xs visible-sm"><div class="stickybar__wrapper coolBar__wrapper clearfix"><div class="coolBar__section"><a id="article_Ctrl" href="#" data-db-target-for="article-sec_Pop" role="button" aria-expanded="false" aria-label="Sections Menu" class="coolBar__ctrl"><i class="icon-burger"></i></a><div id="article_Pop" data-db-target-of="article-sec_Pop" aria-hidden="true" class="coolBar__drop fixed rlist"><div data-target=".article__sections" data-remove="false" data-target-class="hidden-xs hidden-sm" data-toggle="transplant" data-direction="from" data-transplant="self" class="transplant showit"></div></div></div><div data-target=".pill-section .pill-list" data-remove="false" data-target-class="hidden-xs hidden-sm" data-toggle="transplant" data-direction="from" data-transplant="self" class="transplant showit"></div></div></nav><div class="article__body"><!-- abstract content --><div class="hlFld-Abstract"><a name="abstract"></a><a href="#" id="SEC_abstract" class="sr-only-focusable">Skip Abstract Section</a><div class="article__section article__abstract clearfix"><div class="colored-block__title"><h2 id="d81610095e1" class="section__title left-bordered-title">Abstract</h2></div><div class="abstractSection abstractInFull"><div class="abstractSection abstractInFull"><p>In a graphical user interface, physical layout and abstract structure are two important aspects of a graph. This article proposes a new graph grammar formalism which integrates both the spatial and structural specification mechanisms in a single framework. This formalism is equipped with a parser that performs in polynomial time with an improved parsing complexity over its nonspatial predecessor, that is, the Reserved Graph Grammar. With the extended expressive power, the formalism is suitable for many user interface applications. The article presents its application in adaptive Web design and presentation.</p></div></div></div></div><!-- /abstract content --><div class="pb-dropzone" data-pb-dropzone="pubContentAccessDenialDropzone"><div data-widget-def="graphQueryWidget" data-widget-id="a375655b-dac3-4010-824b-309045e95f54" class="article__section article__access-block separated-block">
+        
+
+
+
+        
+        <h3>Get full access to this article<p class="info--text big">Purchase, subscribe or recommend this article to your librarian.</p><div title="Get this Article" class="access-block__links"><a href="/action/publisherEcommerceHelper?doi=10.1145/1165734.1165739&amp;redirectUri=https://dl.acm.org/doi/pdf/10.1145/1165734.1165739" class="btn blue big"><span>Get this Article</span></a></div><p class="logIn text-uppercase">Already a Subscriber?<a href="/action/showLogin?redirectUri=/doi/10.1145/1165734.1165739" title="Sign In" class="space link">Sign In</a></p></h3>
+
+        </div></div><div class="article__section article__references show-more-items" data-sectionname="References"><p class="explanation__text"></p><div class="colored-block__title"><a id="SEC_refrences" class="sr-only-focusable"></a><h2 id="sec-ref" class="section__title left-bordered-title">
+                    References
+                </h2></div><ol class="rlist references__list references__numeric"><li id="ref-00001" class="&#xA;                references__item&#xA;            "><span class="references__note">Allen, J. 1983. Maintaining knowledge about temporal intervals. Comm. ACM 26, 832--843.  <span class="references__pub-id doi 10.1145/182.358434"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Allen%2C+J.+1983.+Maintaining+knowledge+about+temporal+intervals.+Comm.+ACM+26%2C+832%2D%2D843.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00002" class="&#xA;                references__item&#xA;            "><span class="references__note">Allen, R. and Garlan, D. 1994. Formalizing architectural connection. In Proceedings of the 16th International Conference on Software Engineering. 71--80. <span class="references__pub-id doi 10.5555/257734.257745"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Allen%2C+R.+and+Garlan%2C+D.+1994.+Formalizing+architectural+connection.+In+Proceedings+of+the+16th+International+Conference+on+Software+Engineering.+71%2D%2D80.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00003" class="&#xA;                references__item&#xA;            "><span class="references__note">Bardohl, R., Taentzer, G., Minas, M., and Schürr, A. 1999. Application of graph transformation to visual languages. In Handbook on Graph Grammars and Computing by Graph Transformation: Applications, Languages and Tools. H. Ehrig, G. Engels, H. J. Kreowski, and G. Rozenberg, Eds. World Scientific, 105--180. <span class="references__pub-id doi 10.5555/328523.328531"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Bardohl%2C+R.%2C+Taentzer%2C+G.%2C+Minas%2C+M.%2C+and+Sch%C3%BCrr%2C+A.+1999.+Application+of+graph+transformation+to+visual+languages.+In+Handbook+on+Graph+Grammars+and+Computing+by+Graph+Transformation%3A+Applications%2C+Languages+and+Tools.+H.+Ehrig%2C+G.+Engels%2C+H.+J.+Kreowski%2C+and+G.+Rozenberg%2C+Eds.+World+Scientific%2C+105%2D%2D180.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00004" class="&#xA;                references__item&#xA;            "><span class="references__note">Battista, G. D., Eades, P., Tamassia, R., and Tollis, I. G. 1999. Graph Drawing: Algorithms for the Visualization of Graphs. Prentice-Hall, Englewood Cliffs, NJ. <span class="references__pub-id doi 10.5555/551884"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Battista%2C+G.+D.%2C+Eades%2C+P.%2C+Tamassia%2C+R.%2C+and+Tollis%2C+I.+G.+1999.+Graph+Drawing%3A+Algorithms+for+the+Visualization+of+Graphs.+Prentice-Hall%2C+Englewood+Cliffs%2C+NJ.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00005" class="&#xA;                references__item&#xA;            "><span class="references__note">Blosetin, D. and Schürr, A. 1999. Computing with graphs and graph transformation. Softw. Practice Exper. 29, 3, 197--217.  <span class="references__pub-id doi 10.1002/(SICI)1097-024X(199903)29:3%3C197::AID-SPE228%3E3.3.CO;2-6"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Blosetin%2C+D.+and+Sch%C3%BCrr%2C+A.+1999.+Computing+with+graphs+and+graph+transformation.+Softw.+Practice+Exper.+29%2C+3%2C+197%2D%2D217.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00006" class="&#xA;                references__item&#xA;            "><span class="references__note">Borning, A., Lin, R. K., and Marriott, K. 2000. Constraint-based document layout for the web. Multimedia syst. 8, 3, 177--189.  <span class="references__pub-id doi 10.1007/s005300000043"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Borning%2C+A.%2C+Lin%2C+R.+K.%2C+and+Marriott%2C+K.+2000.+Constraint-based+document+layout+for+the+web.+Multimedia+syst.+8%2C+3%2C+177%2D%2D189.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00007" class="&#xA;                references__item&#xA;            "><span class="references__note">Bottoni, P., Costabile, M. F., and Mussio, P. 1999. Specification and dialogue control of visual interaction through visual rewriting systems. ACM Trans. Programm. Lang. Syst. 21, 6, 1077--1136.  <span class="references__pub-id doi 10.1145/330643.330644"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Bottoni%2C+P.%2C+Costabile%2C+M.+F.%2C+and+Mussio%2C+P.+1999.+Specification+and+dialogue+control+of+visual+interaction+through+visual+rewriting+systems.+ACM+Trans.+Programm.+Lang.+Syst.+21%2C+6%2C+1077%2D%2D1136.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00008" class="&#xA;                references__item&#xA;            "><span class="references__note">Bottoni, P. and Minas, M. Eds. 2003. Proceedings of the GT-VMT'2002-Graph Transformation and Visual Modeling Techniques, Electronic Notes in Theoretical Computer Science 72, 3. Elsevier Science. <span class="references__pub-id doi 10.5555/647562.730799"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Bottoni%2C+P.+and+Minas%2C+M.+Eds.+2003.+Proceedings+of+the+GT-VMT%272002-Graph+Transformation+and+Visual+Modeling+Techniques%2C+Electronic+Notes+in+Theoretical+Computer+Science+72%2C+3.+Elsevier+Science.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00009" class="&#xA;                references__item&#xA;            "><span class="references__note">Brachman, R. J. and Schmolze, J. G. 1985. An overview of the KL-ONE knowledge representation system. Cognitive Science, 171--216.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Brachman%2C+R.+J.+and+Schmolze%2C+J.+G.+1985.+An+overview+of+the+KL-ONE+knowledge+representation+system.+Cognitive+Science%2C+171%2D%2D216."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00010" class="&#xA;                references__item&#xA;            "><span class="references__note">Brandenburg, F. J. 1995. Designing graph drawings by layout graph grammars. In Proceedings of the International Workshop on Graph Drawing. 416--428. <span class="references__pub-id doi 10.5555/647546.760480"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Brandenburg%2C+F.+J.+1995.+Designing+graph+drawings+by+layout+graph+grammars.+In+Proceedings+of+the+International+Workshop+on+Graph+Drawing.+416%2D%2D428.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00011" class="&#xA;                references__item&#xA;            "><span class="references__note">Burnett, M. M. and Gottfried, H. J. 1998. Graphical definitions: Expanding spreadsheet languages through direct manipulation and gestures. ACM Trans. Comput.-Human Interact. 5, 1, 1--33.  <span class="references__pub-id doi 10.1145/274444.274445"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Burnett%2C+M.+M.+and+Gottfried%2C+H.+J.+1998.+Graphical+definitions%3A+Expanding+spreadsheet+languages+through+direct+manipulation+and+gestures.+ACM+Trans.+Comput.-Human+Interact.+5%2C+1%2C+1%2D%2D33.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00012" class="&#xA;                references__item&#xA;            "><span class="references__note">Burnett, M. M., Yang, S., and Summet, J. 2002. A scalable method for deductive generation in the spreadsheet paradigm. ACM Trans. Comput.-Human Interact. 9, 4, 253--284.  <span class="references__pub-id doi 10.1145/586081.586083"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Burnett%2C+M.+M.%2C+Yang%2C+S.%2C+and+Summet%2C+J.+2002.+A+scalable+method+for+deductive+generation+in+the+spreadsheet+paradigm.+ACM+Trans.+Comput.-Human+Interact.+9%2C+4%2C+253%2D%2D284.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00013" class="&#xA;                references__item&#xA;            "><span class="references__note">Burnett, M. M. 2006. Visual language research bibliography. http://www.cs.orst.edu/~burnett/vpl.html.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Burnett%2C+M.+M.+2006.+Visual+language+research+bibliography.+http%3A%2F%2Fwww.cs.orst.edu%2F%7Eburnett%2Fvpl.html."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00014" class="&#xA;                references__item&#xA;            "><span class="references__note">Buyukkokten, O., Garcia-Molina, H., and Paepcke, A. 2001. Accordion summarization for end-game browsing on PDAs and cellular phones. In Proceedings of the ACM SIGCHI'01. 213--220.  <span class="references__pub-id doi 10.1145/365024.365102"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Buyukkokten%2C+O.%2C+Garcia-Molina%2C+H.%2C+and+Paepcke%2C+A.+2001.+Accordion+summarization+for+end-game+browsing+on+PDAs+and+cellular+phones.+In+Proceedings+of+the+ACM+SIGCHI%2701.+213%2D%2D220.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00015" class="&#xA;                references__item&#xA;            "><span class="references__note">Chang, S. K., Shi, Q. Y., and Yan, C. W. 1987. Iconic indexing by 2-D string. IEEE Trans. Patt. Analy. Machine Intelli. 9, 413--427.  <span class="references__pub-id doi 10.1109/TPAMI.1987.4767923"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Chang%2C+S.+K.%2C+Shi%2C+Q.+Y.%2C+and+Yan%2C+C.+W.+1987.+Iconic+indexing+by+2-D+string.+IEEE+Trans.+Patt.+Analy.+Machine+Intelli.+9%2C+413%2D%2D427.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00016" class="&#xA;                references__item&#xA;            "><span class="references__note">Chen, Y., Ma, W. Y., and Zhang, H. J. 2003. Detecting web page structure for adaptive viewing on small form factor devices. In Proceedings of the International Conference on World Wide Web, 225--233.  <span class="references__pub-id doi 10.1145/775152.775184"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Chen%2C+Y.%2C+Ma%2C+W.+Y.%2C+and+Zhang%2C+H.+J.+2003.+Detecting+web+page+structure+for+adaptive+viewing+on+small+form+factor+devices.+In+Proceedings+of+the+International+Conference+on+World+Wide+Web%2C+225%2D%2D233.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00017" class="&#xA;                references__item&#xA;            "><span class="references__note">Chok, S. S. and Marriott, K. 2003. Automatic generation of intelligent diagram editors. ACM Trans. Comput.-Human Interact. 10, 3, 244--276.  <span class="references__pub-id doi 10.1145/937549.937553"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Chok%2C+S.+S.+and+Marriott%2C+K.+2003.+Automatic+generation+of+intelligent+diagram+editors.+ACM+Trans.+Comput.-Human+Interact.+10%2C+3%2C+244%2D%2D276.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00018" class="&#xA;                references__item&#xA;            "><span class="references__note">Clementini, E., Felice, P. D., and Oosterom, P. V. 1993. A small set of formal topological relationships for end-user interaction. In Proceedings of the 3rd International Symposium on Advances in Spatial Databases. Lecture Notes in Computer Science, vol. 692, 277--295. <span class="references__pub-id doi 10.5555/647223.718898"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Clementini%2C+E.%2C+Felice%2C+P.+D.%2C+and+Oosterom%2C+P.+V.+1993.+A+small+set+of+formal+topological+relationships+for+end-user+interaction.+In+Proceedings+of+the+3rd+International+Symposium+on+Advances+in+Spatial+Databases.+Lecture+Notes+in+Computer+Science%2C+vol.+692%2C+277%2D%2D295.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00019" class="&#xA;                references__item&#xA;            "><span class="references__note">Clementini, E., Felice, P. D., and Hernández, D. 1997. Qualitative representation of positional information. Artificial Intelli. 95, 317--356.  <span class="references__pub-id doi 10.1016/S0004-3702(97)00046-5"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Clementini%2C+E.%2C+Felice%2C+P.+D.%2C+and+Hern%C3%A1ndez%2C+D.+1997.+Qualitative+representation+of+positional+information.+Artificial+Intelli.+95%2C+317%2D%2D356.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00020" class="&#xA;                references__item&#xA;            "><span class="references__note">Cohn, A. G. 1997. Qualitative spatial representation and reasoning techniques. In Proceedings of the KI-97. Lecture Notes in Artificial Intelligence, vol. 1303, 1--30. <span class="references__pub-id doi 10.5555/647617.731733"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Cohn%2C+A.+G.+1997.+Qualitative+spatial+representation+and+reasoning+techniques.+In+Proceedings+of+the+KI-97.+Lecture+Notes+in+Artificial+Intelligence%2C+vol.+1303%2C+1%2D%2D30.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00021" class="&#xA;                references__item&#xA;            "><span class="references__note">Cohn, A. G. and Hazarika, S. M. 2001. Qualitative spatial representation and reasoning: An overview. Fundamenta Informaticae 46, 1--2, 1--29. <span class="references__pub-id doi 10.5555/2372156.2372158"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Cohn%2C+A.+G.+and+Hazarika%2C+S.+M.+2001.+Qualitative+spatial+representation+and+reasoning%3A+An+overview.+Fundamenta+Informaticae+46%2C+1%2D%2D2%2C+1%2D%2D29.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00022" class="&#xA;                references__item&#xA;            "><span class="references__note">Dean, T. R. and Cordy, J. R. 1995. A syntactic theory of software architecture. IEEE Trans. Soft. Engin. 21, 4, 302--313.  <span class="references__pub-id doi 10.1109/32.385969"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Dean%2C+T.+R.+and+Cordy%2C+J.+R.+1995.+A+syntactic+theory+of+software+architecture.+IEEE+Trans.+Soft.+Engin.+21%2C+4%2C+302%2D%2D313.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00023" class="&#xA;                references__item&#xA;            "><span class="references__note">Del Bimbo, A., Vicario, E., and Zingoni, D. 1994. A spatial logic for symbolic description of image contents. J. Visual Lang. Comput. 5, 3, 267--286.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Del+Bimbo%2C+A.%2C+Vicario%2C+E.%2C+and+Zingoni%2C+D.+1994.+A+spatial+logic+for+symbolic+description+of+image+contents.+J.+Visual+Lang.+Comput.+5%2C+3%2C+267%2D%2D286."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00024" class="&#xA;                references__item&#xA;            "><span class="references__note">Ehrig, H., Engels, G., Kreowski, H. J., and Rozenberg, G. Eds. 1999a. Handbook on Graph Grammars and Computing by Graph Transformation: Applications, Languages and Tools. World Scientific. <span class="references__pub-id doi 10.5555/328523"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Ehrig%2C+H.%2C+Engels%2C+G.%2C+Kreowski%2C+H.+J.%2C+and+Rozenberg%2C+G.+Eds.+1999a.+Handbook+on+Graph+Grammars+and+Computing+by+Graph+Transformation%3A+Applications%2C+Languages+and+Tools.+World+Scientific.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00025" class="&#xA;                references__item&#xA;            "><span class="references__note">Ehrig, H., Kreowski, H. J., Montanari, U., and Rozenberg G. Eds. 1999b. Handbook of Graph Grammars and Computing by Graph Transformation: Concurrency, Parallelism, and Distribution. World Scientific. <span class="references__pub-id doi 10.5555/320647"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Ehrig%2C+H.%2C+Kreowski%2C+H.+J.%2C+Montanari%2C+U.%2C+and+Rozenberg+G.+Eds.+1999b.+Handbook+of+Graph+Grammars+and+Computing+by+Graph+Transformation%3A+Concurrency%2C+Parallelism%2C+and+Distribution.+World+Scientific.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00026" class="&#xA;                references__item&#xA;            "><span class="references__note">Fischer, T., Niere, J., Torunski, L., and Zündorf, A. 1998. Story diagrams: A new graph rewrite language based on the unified modeling language and java. In Proceedings of the Theory and Application to Graph Transformations. Lecture Notes in Computer Science, vol. 1764, 296--309. <span class="references__pub-id doi 10.5555/645872.668867"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Fischer%2C+T.%2C+Niere%2C+J.%2C+Torunski%2C+L.%2C+and+Z%C3%BCndorf%2C+A.+1998.+Story+diagrams%3A+A+new+graph+rewrite+language+based+on+the+unified+modeling+language+and+java.+In+Proceedings+of+the+Theory+and+Application+to+Graph+Transformations.+Lecture+Notes+in+Computer+Science%2C+vol.+1764%2C+296%2D%2D309.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00027" class="&#xA;                references__item&#xA;            "><span class="references__note">Frank, A. U. 1996. Qualitative spatial reasoning: cardinal directions as an example. Int. J. Geograph. Inform. Sci. 10, 3, 269--290.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Frank%2C+A.+U.+1996.+Qualitative+spatial+reasoning%3A+cardinal+directions+as+an+example.+Int.+J.+Geograph.+Inform.+Sci.+10%2C+3%2C+269%2D%2D290."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00028" class="&#xA;                references__item&#xA;            "><span class="references__note">Golin, E. J. and Reiss, S. P. 1989. The specification of visual language syntax. In Proceedings of the IEEE Workshop on Visual Languages. 105--110.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Golin%2C+E.+J.+and+Reiss%2C+S.+P.+1989.+The+specification+of+visual+language+syntax.+In+Proceedings+of+the+IEEE+Workshop+on+Visual+Languages.+105%2D%2D110."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00029" class="&#xA;                references__item&#xA;            "><span class="references__note">Golin, E. J. 1991. Parsing visual languages with picture layout grammars. J. Visual Lang. Comput. 4, 2, 371--394.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Golin%2C+E.+J.+1991.+Parsing+visual+languages+with+picture+layout+grammars.+J.+Visual+Lang.+Comput.+4%2C+2%2C+371%2D%2D394."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00030" class="&#xA;                references__item&#xA;            "><span class="references__note">Haarslev, V. and Wessel, M. 1996. GenEd--an editor with generic semantics for formal reasoning about visual notations. In Proceedings of the 1996 IEEE Symposium on Visual Languages. 204--211. <span class="references__pub-id doi 10.5555/832277.834345"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Haarslev%2C+V.+and+Wessel%2C+M.+1996.+GenEd%2D%2Dan+editor+with+generic+semantics+for+formal+reasoning+about+visual+notations.+In+Proceedings+of+the+1996+IEEE+Symposium+on+Visual+Languages.+204%2D%2D211.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00031" class="&#xA;                references__item&#xA;            "><span class="references__note">Haarslev, V. 1998. A fully formalized theory for describing visual notations. In Visual Language Theory. K. Marriott and B. Meyer, Eds. Springer, 261--292. <span class="references__pub-id doi 10.5555/286111.286120"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Haarslev%2C+V.+1998.+A+fully+formalized+theory+for+describing+visual+notations.+In+Visual+Language+Theory.+K.+Marriott+and+B.+Meyer%2C+Eds.+Springer%2C+261%2D%2D292.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00032" class="&#xA;                references__item&#xA;            "><span class="references__note">Heckel, R., Mens, T., and Wermelinger, M. Eds. 2003. In Proceedings of the Workshop on Software Evolution Through Transformations Toward Uniform Support Throughout the Software Lift-Cycle. Electronic Notes in Theoretical Computer Science 72, 4. Elsevier Science.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Heckel%2C+R.%2C+Mens%2C+T.%2C+and+Wermelinger%2C+M.+Eds.+2003.+In+Proceedings+of+the+Workshop+on+Software+Evolution+Through+Transformations+Toward+Uniform+Support+Throughout+the+Software+Lift-Cycle.+Electronic+Notes+in+Theoretical+Computer+Science+72%2C+4.+Elsevier+Science."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00033" class="&#xA;                references__item&#xA;            "><span class="references__note">Hernández, D., Clementini, E., and Felice, P. D. 1995. Qualitative distance. In Proceedings of the Spatial Information Theory: A Theoretical Basis for GIS, Lecture Notes in Computer Science, vol. 988, 45--58.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Hern%C3%A1ndez%2C+D.%2C+Clementini%2C+E.%2C+and+Felice%2C+P.+D.+1995.+Qualitative+distance.+In+Proceedings+of+the+Spatial+Information+Theory%3A+A+Theoretical+Basis+for+GIS%2C+Lecture+Notes+in+Computer+Science%2C+vol.+988%2C+45%2D%2D58."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00034" class="&#xA;                references__item&#xA;            "><span class="references__note">Irani, P. and Ware, C. 2003. Diagramming information structures using 3D perceptual primitives. ACM Trans. Comput.-Human Interac. 10, 1, 1--19.  <span class="references__pub-id doi 10.1145/606658.606659"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Irani%2C+P.+and+Ware%2C+C.+2003.+Diagramming+information+structures+using+3D+perceptual+primitives.+ACM+Trans.+Comput.-Human+Interac.+10%2C+1%2C+1%2D%2D19.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00035" class="&#xA;                references__item&#xA;            "><span class="references__note">Kong, J. and Zhang, K. 2003. Graph-based consistency checking in spatial information system. In Proceedings of the 2003 IEEE Symposium on Visual Languages and Formal Methods. 153--160. <span class="references__pub-id doi 10.5555/1153917.1153983"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Kong%2C+J.+and+Zhang%2C+K.+2003.+Graph-based+consistency+checking+in+spatial+information+system.+In+Proceedings+of+the+2003+IEEE+Symposium+on+Visual+Languages+and+Formal+Methods.+153%2D%2D160.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00036" class="&#xA;                references__item&#xA;            "><span class="references__note">Kreowski, H. J. and Knirsch, P. Eds. 2002. In Proceedings of the AGT2002-Applied Graph Transformation.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Kreowski%2C+H.+J.+and+Knirsch%2C+P.+Eds.+2002.+In+Proceedings+of+the+AGT2002-Applied+Graph+Transformation."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00037" class="&#xA;                references__item&#xA;            "><span class="references__note">Lakin, F. 1987. Visual grammars for visual languages. In Proceedings of the American Association for Artificial Intelligence. 683--688.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Lakin%2C+F.+1987.+Visual+grammars+for+visual+languages.+In+Proceedings+of+the+American+Association+for+Artificial+Intelligence.+683%2D%2D688."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00038" class="&#xA;                references__item&#xA;            "><span class="references__note">Marriott, K. 1994. Constraint multiset grammars. In Proceedings of the IEEE Symposium on Visual Languages. 118--125.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Marriott%2C+K.+1994.+Constraint+multiset+grammars.+In+Proceedings+of+the+IEEE+Symposium+on+Visual+Languages.+118%2D%2D125."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00039" class="&#xA;                references__item&#xA;            "><span class="references__note">Marriott, K. and Meyer, B. 1997. On the classification of visual languages by grammar hierarchies. J. Visual Language Comput. 8, 375--402.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Marriott%2C+K.+and+Meyer%2C+B.+1997.+On+the+classification+of+visual+languages+by+grammar+hierarchies.+J.+Visual+Language+Comput.+8%2C+375%2D%2D402."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00040" class="&#xA;                references__item&#xA;            "><span class="references__note">Marriott, K., Meyer, B., and Wittenburg, K. B. 1998. A survey of visual languages specification and recognition. In Visual Language Theory. K. Marriott and B. Meyer, Eds. Springer, 5--85. <span class="references__pub-id doi 10.5555/286111.286113"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Marriott%2C+K.%2C+Meyer%2C+B.%2C+and+Wittenburg%2C+K.+B.+1998.+A+survey+of+visual+languages+specification+and+recognition.+In+Visual+Language+Theory.+K.+Marriott+and+B.+Meyer%2C+Eds.+Springer%2C+5%2D%2D85.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00041" class="&#xA;                references__item&#xA;            "><span class="references__note">Marriott, K., Meyer, B., and Tardif, L. 2002. Fast and efficient client-side adaptability for SVG. In Proceedings of the World Wide Conference. 496--507.  <span class="references__pub-id doi 10.1145/511446.511510"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Marriott%2C+K.%2C+Meyer%2C+B.%2C+and+Tardif%2C+L.+2002.+Fast+and+efficient+client-side+adaptability+for+SVG.+In+Proceedings+of+the+World+Wide+Conference.+496%2D%2D507.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00042" class="&#xA;                references__item&#xA;            "><span class="references__note">Mens, T., Schürr, A., and Taentzer, G. Eds. 2002. In Proceedings of the GraBaTs 2002-Graph-Based Tools. Electronic Notes in Theoretical Computer Science 72, 2, Elsevier Science.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Mens%2C+T.%2C+Sch%C3%BCrr%2C+A.%2C+and+Taentzer%2C+G.+Eds.+2002.+In+Proceedings+of+the+GraBaTs+2002-Graph-Based+Tools.+Electronic+Notes+in+Theoretical+Computer+Science+72%2C+2%2C+Elsevier+Science."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00043" class="&#xA;                references__item&#xA;            "><span class="references__note">Métayer, D. L. 1998. Describing software architecture styles using graph grammars. IEEE Trans. Soft. Engin. 24, 7, 521--533.  <span class="references__pub-id doi 10.1109/32.708567"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=M%C3%A9tayer%2C+D.+L.+1998.+Describing+software+architecture+styles+using+graph+grammars.+IEEE+Trans.+Soft.+Engin.+24%2C+7%2C+521%2D%2D533.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00044" class="&#xA;                references__item&#xA;            "><span class="references__note">Meyer, B. 1992. Pictures depicting pictures on the specification of visual languages by visual grammars. In Proceedings of the IEEE Workshop on Visual Languages. 41--47.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Meyer%2C+B.+1992.+Pictures+depicting+pictures+on+the+specification+of+visual+languages+by+visual+grammars.+In+Proceedings+of+the+IEEE+Workshop+on+Visual+Languages.+41%2D%2D47."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00045" class="&#xA;                references__item&#xA;            "><span class="references__note">Minas, M. 2002. Concepts and realization of a diagram editor generator based on hypergraph transformation. Science of Computer Program. 40, 157--180.  <span class="references__pub-id doi 10.1016/S0167-6423(02)00037-0"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Minas%2C+M.+2002.+Concepts+and+realization+of+a+diagram+editor+generator+based+on+hypergraph+transformation.+Science+of+Computer+Program.+40%2C+157%2D%2D180.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00046" class="&#xA;                references__item&#xA;            "><span class="references__note">Myers, B., Hudson, S. E., and Pausch, R. 2000. Past, present, and future of user interface software tools. ACM Trans. Comput.-Human Interact. 7, 1, 3--28.  <span class="references__pub-id doi 10.1145/344949.344959"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Myers%2C+B.%2C+Hudson%2C+S.+E.%2C+and+Pausch%2C+R.+2000.+Past%2C+present%2C+and+future+of+user+interface+software+tools.+ACM+Trans.+Comput.-Human+Interact.+7%2C+1%2C+3%2D%2D28.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00047" class="&#xA;                references__item&#xA;            "><span class="references__note">Peuquet, D. and Zhan, C. X. 1987. An algorithm to determine the directional relationship between arbitrarily-shaped polygons in a plane. Patt. Recog. 20, 65--74.  <span class="references__pub-id doi 10.1016/0031-3203(87)90018-5"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Peuquet%2C+D.+and+Zhan%2C+C.+X.+1987.+An+algorithm+to+determine+the+directional+relationship+between+arbitrarily-shaped+polygons+in+a+plane.+Patt.+Recog.+20%2C+65%2D%2D74.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00048" class="&#xA;                references__item&#xA;            "><span class="references__note">Pullar, D. and Egenhofer, M. 1988. Toward formal definitions of topological relationships. In Proceedings of the 3rd International Symposium on Spatial Data Handling. 225--241.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Pullar%2C+D.+and+Egenhofer%2C+M.+1988.+Toward+formal+definitions+of+topological+relationships.+In+Proceedings+of+the+3rd+International+Symposium+on+Spatial+Data+Handling.+225%2D%2D241."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00049" class="&#xA;                references__item&#xA;            "><span class="references__note">Qiu, M. K., Song, G. L., Kong, J., and Zhang, K. 2003. Spatial graph grammars for Web information transformation. In Proceedings of the IEEE Symposium on Visual/Multimedia Languages. 84--91. <span class="references__pub-id doi 10.5555/1153917.1153971"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Qiu%2C+M.+K.%2C+Song%2C+G.+L.%2C+Kong%2C+J.%2C+and+Zhang%2C+K.+2003.+Spatial+graph+grammars+for+Web+information+transformation.+In+Proceedings+of+the+IEEE+Symposium+on+Visual%2FMultimedia+Languages.+84%2D%2D91.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00050" class="&#xA;                references__item&#xA;            "><span class="references__note">Rekers, J. and Schürr, A. 1996. A graph based framework for the implementation of visual environments. In Proceedings of the IEEE Symposium on Visual Languages. 148--155. <span class="references__pub-id doi 10.5555/832277.834363"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Rekers%2C+J.+and+Sch%C3%BCrr%2C+A.+1996.+A+graph+based+framework+for+the+implementation+of+visual+environments.+In+Proceedings+of+the+IEEE+Symposium+on+Visual+Languages.+148%2D%2D155.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00051" class="&#xA;                references__item&#xA;            "><span class="references__note">Rekers, J. and Schürr, A. 1997. Defining and parsing visual languages with layered graph grammars. J. Visual Languag. Comput. 8, 1, 27--55.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Rekers%2C+J.+and+Sch%C3%BCrr%2C+A.+1997.+Defining+and+parsing+visual+languages+with+layered+graph+grammars.+J.+Visual+Languag.+Comput.+8%2C+1%2C+27%2D%2D55."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00052" class="&#xA;                references__item&#xA;            "><span class="references__note">Révész, G. E. 1983. Introduction to Formal Languages. McGraw-Hill Inc.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=R%C3%A9v%C3%A9sz%2C+G.+E.+1983.+Introduction+to+Formal+Languages.+McGraw-Hill+Inc."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00053" class="&#xA;                references__item&#xA;            "><span class="references__note">Rozenberg, G. and Welzl, E. 1986. Boundary NLC graph grammars---basic definitions, normal forms, and complexity. Info. Control 69, 136--167.  <span class="references__pub-id doi 10.1016/S0019-9958(86)80045-6"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Rozenberg%2C+G.+and+Welzl%2C+E.+1986.+Boundary+NLC+graph+grammars%2D%2D-basic+definitions%2C+normal+forms%2C+and+complexity.+Info.+Control+69%2C+136%2D%2D167.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00054" class="&#xA;                references__item&#xA;            "><span class="references__note">Rozenberg, G. (Ed.) 1997. Handbook on Graph Grammars and Computing by Graph Transformation: Foundations. World Scientific. <span class="references__pub-id doi 10.5555/278918"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Rozenberg%2C+G.+%28Ed.%29+1997.+Handbook+on+Graph+Grammars+and+Computing+by+Graph+Transformation%3A+Foundations.+World+Scientific.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00055" class="&#xA;                references__item&#xA;            "><span class="references__note">Schürr, A. 1994. Specification of graph translators with triple graph grammars. In Proceedings of the 20th International Workshop on Graph-Theoretic Concepts in Computer Science. 151--163. <span class="references__pub-id doi 10.5555/647675.731658"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Sch%C3%BCrr%2C+A.+1994.+Specification+of+graph+translators+with+triple+graph+grammars.+In+Proceedings+of+the+20th+International+Workshop+on+Graph-Theoretic+Concepts+in+Computer+Science.+151%2D%2D163.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00056" class="&#xA;                references__item&#xA;            "><span class="references__note">Schürr, A., Winter, A. J., and Zündorf, A. 1999. The PROGRES approach: Language and environment. In Handbook on Graph Grammars and Computing by Graph Transformation: Applications, Languages and Tools. H. Ehrig, G. Engels, H. J. Kreowski, and G. Rozenberg, Eds. World Scientific, 487--550. <span class="references__pub-id doi 10.5555/328523.328617"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Sch%C3%BCrr%2C+A.%2C+Winter%2C+A.+J.%2C+and+Z%C3%BCndorf%2C+A.+1999.+The+PROGRES+approach%3A+Language+and+environment.+In+Handbook+on+Graph+Grammars+and+Computing+by+Graph+Transformation%3A+Applications%2C+Languages+and+Tools.+H.+Ehrig%2C+G.+Engels%2C+H.+J.+Kreowski%2C+and+G.+Rozenberg%2C+Eds.+World+Scientific%2C+487%2D%2D550.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00057" class="&#xA;                references__item&#xA;            "><span class="references__note">Soffer, A. and Samet, H. 1998. Pictorial query specification for browsing through spatially-referenced image databases. J. Visual Languag. Comput. 9, 6, 567--596.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Soffer%2C+A.+and+Samet%2C+H.+1998.+Pictorial+query+specification+for+browsing+through+spatially-referenced+image+databases.+J.+Visual+Languag.+Comput.+9%2C+6%2C+567%2D%2D596."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00058" class="&#xA;                references__item&#xA;            "><span class="references__note">Weitzman, L. and Wittenburg, K. 1993. Relational gramamrs for interactive design. In Proceedings of the IEEE Symposium on Visual Languages. 4--11.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Weitzman%2C+L.+and+Wittenburg%2C+K.+1993.+Relational+gramamrs+for+interactive+design.+In+Proceedings+of+the+IEEE+Symposium+on+Visual+Languages.+4%2D%2D11."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00059" class="&#xA;                references__item&#xA;            "><span class="references__note">Wittenburg, K. 1992. Earley-style parsing for relational grammars. In Proceedings of the IEEE Workshop on Visual Languages. 192--199.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Wittenburg%2C+K.+1992.+Earley-style+parsing+for+relational+grammars.+In+Proceedings+of+the+IEEE+Workshop+on+Visual+Languages.+192%2D%2D199."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00060" class="&#xA;                references__item&#xA;            "><span class="references__note">Yang, Y. D. and Zhang, H. J. 2001. HTML page analysis based on visual cues. In Proceedings of the 6th International Conference on Document Analysis and Recognition. 859--864. <span class="references__pub-id doi 10.5555/876867.877717"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Yang%2C+Y.+D.+and+Zhang%2C+H.+J.+2001.+HTML+page+analysis+based+on+visual+cues.+In+Proceedings+of+the+6th+International+Conference+on+Document+Analysis+and+Recognition.+859%2D%2D864.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00061" class="&#xA;                references__item&#xA;            "><span class="references__note">Yu, S. P., Cai, D., Wen, J. R., and Ma, W. Y. 2003. Improving pseudo-relevance feedback in Web information retrieval using Web page segmentation. In Proceedings of the International Conference on World Wide Web. 11--18.  <span class="references__pub-id doi 10.1145/775152.775155"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Yu%2C+S.+P.%2C+Cai%2C+D.%2C+Wen%2C+J.+R.%2C+and+Ma%2C+W.+Y.+2003.+Improving+pseudo-relevance+feedback+in+Web+information+retrieval+using+Web+page+segmentation.+In+Proceedings+of+the+International+Conference+on+World+Wide+Web.+11%2D%2D18.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00062" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, D. Q. 1998. Generation of visual programming languages, Ph.D. Thesis, Macquarie University.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+D.+Q.+1998.+Generation+of+visual+programming+languages%2C+Ph.D.+Thesis%2C+Macquarie+University."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00063" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, D. Q., Zhang, K., and Cao, J. 2001a. A context-sensitive graph grammar formalism for the specification of visual languages. Comput. J. 44, 3, 187--200.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+D.+Q.%2C+Zhang%2C+K.%2C+and+Cao%2C+J.+2001a.+A+context-sensitive+graph+grammar+formalism+for+the+specification+of+visual+languages.+Comput.+J.+44%2C+3%2C+187%2D%2D200."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00064" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, K., Zhang, D. Q., and Deng, Y. 2001b. Graphical transformation of multimedia XML documents. Ann. Soft. Engin. 12, 1, 119--137.  <span class="references__pub-id doi 10.1023/A:1013310705258"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+K.%2C+Zhang%2C+D.+Q.%2C+and+Deng%2C+Y.+2001b.+Graphical+transformation+of+multimedia+XML+documents.+Ann.+Soft.+Engin.+12%2C+1%2C+119%2D%2D137.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00065" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, K., Zhang, D. Q., and Cao, J. 2001c. Design, construction, and application of a generic visual language generation environment. IEEE Trans. Soft. Engin. 27, 4, 289--307.  <span class="references__pub-id doi 10.1109/32.917521"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+K.%2C+Zhang%2C+D.+Q.%2C+and+Cao%2C+J.+2001c.+Design%2C+construction%2C+and+application+of+a+generic+visual+language+generation+environment.+IEEE+Trans.+Soft.+Engin.+27%2C+4%2C+289%2D%2D307.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00066" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, K. B. and Zhang, K. 2002. Grammar-based approach for a visual programming language generation system. In Proceedings of the 2th International Conference on Theory and Application of Diagrams. Lecture Notes in Computer Science, vol. 2317, 106--109. <span class="references__pub-id doi 10.5555/645971.675051"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+K.+B.+and+Zhang%2C+K.+2002.+Grammar-based+approach+for+a+visual+programming+language+generation+system.+In+Proceedings+of+the+2th+International+Conference+on+Theory+and+Application+of+Diagrams.+Lecture+Notes+in+Computer+Science%2C+vol.+2317%2C+106%2D%2D109.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00067" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, Z., He, B., and Chang, K. C. C. 2004. Understanding Web query interfaces: Best-effort parsing with hidden syntax. In Proceedings of the ACM SIGMOD International Conference on Management of Data. 107--118.  <span class="references__pub-id doi 10.1145/1007568.1007583"></span><span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+Z.%2C+He%2C+B.%2C+and+Chang%2C+K.+C.+C.+2004.+Understanding+Web+query+interfaces%3A+Best-effort+parsing+with+hidden+syntax.+In+Proceedings+of+the+ACM+SIGMOD+International+Conference+on+Management+of+Data.+107%2D%2D118.+"target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li><li id="ref-00068" class="&#xA;                references__item&#xA;            "><span class="references__note">Zhang, K., Kong, J., Qiu, M. K., and Song, G. L. 2005. Multimedia layout adaptation through grammatical specifications. ACM/Springer Multimedia Syst. 10, 3, 245--260.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&q=Zhang%2C+K.%2C+Kong%2C+J.%2C+Qiu%2C+M.+K.%2C+and+Song%2C+G.+L.+2005.+Multimedia+layout+adaptation+through+grammatical+specifications.+ACM%2FSpringer+Multimedia+Syst.+10%2C+3%2C+245%2D%2D260."target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"/></a></span></span></li></ol></div><div class="pb-dropzone" data-pb-dropzone="citedByListDropzone" title="citedByListDropzone"><!-- Empty dropzone --></div><div class="response"><div class="sub-article-title"></div></div>
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3TagWidget" data-widget-id="2ed7e2cb-91bf-4410-89fa-60d7242128b4" class="citation article__section article__index-terms">
+        
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="graphQueryWidget" data-widget-id="46655605-a6a7-450d-8cb4-39832738abe0" class="colored-block__title">
+        
+
+
+
+        
+        <h2 id="sec-terms" class="section__title left-bordered-title">Index Terms</h2>
+
+        </div>
+    
+
+<ol class="rlist organizational-chart"><li><h6>Spatial graph grammars for graphical user interfaces</h6><ol class="rlist level-1  ch-3 hasNodes"><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003120?SeriesKey=tochi&amp;expand=all">Human-centered computing</a></p></div><ol class="rlist level-2 ch-1 hasNodes"><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003120.10003121?SeriesKey=tochi&amp;expand=all">Human computer interaction (HCI)</a></p></div><ol class="rlist level-3 ch-0"></ol></li></ol></li><li><div data-background="#808080" style="background-color:#808080;box-shadow:none"><p><a href="/topic/ccs2012/10011007?SeriesKey=tochi&amp;expand=all">Software and its engineering</a></p></div><ol class="rlist level-2 ch-1 hasNodes"><li><div data-background="#808080" style="background-color:#808080;box-shadow:none"><p><a href="/topic/ccs2012/10011007.10011006?SeriesKey=tochi&amp;expand=all">Software notations and tools</a></p></div><ol class="rlist level-3 ch-2 hasNodes"><li><div data-background="#808080" style="background-color:#808080;box-shadow:none"><p><a href="/topic/ccs2012/10011007.10011006.10011050?SeriesKey=tochi&amp;expand=all">Context specific languages</a></p></div><ol class="rlist level-4 ch-1 hasNodes"><li><div data-background="#808080" style="background-color:#808080;box-shadow:none"><p><a href="/topic/ccs2012/10011007.10011006.10011050.10011058?SeriesKey=tochi&amp;expand=all">Visual languages</a></p></div><ol class="rlist level-5 ch-0"></ol></li></ol></li><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10011007.10011006.10011066?SeriesKey=tochi&amp;expand=all">Development frameworks and environments</a></p></div><ol class="rlist level-5 ch-1 hasNodes"><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10011007.10011006.10011066.10011069?SeriesKey=tochi&amp;expand=all">Integrated and visual development environments</a></p></div><ol class="rlist level-6 ch-0"></ol></li></ol></li></ol></li></ol></li><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003752?SeriesKey=tochi&amp;expand=all">Theory of computation</a></p></div><ol class="rlist level-2 ch-1 hasNodes"><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003752.10003766?SeriesKey=tochi&amp;expand=all">Formal languages and automata theory</a></p></div><ol class="rlist level-3 ch-2 hasNodes"><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003752.10003766.10003767?SeriesKey=tochi&amp;expand=all">Formalisms</a></p></div><ol class="rlist level-4 ch-1 hasNodes"><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003752.10003766.10003767.10003769?SeriesKey=tochi&amp;expand=all">Rewrite systems</a></p></div><ol class="rlist level-5 ch-0"></ol></li></ol></li><li><div data-background="#F5F5F5" style="background-color:#F5F5F5;box-shadow:none"><p><a href="/topic/ccs2012/10003752.10003766.10003771?SeriesKey=tochi&amp;expand=all">Grammars and context-free languages</a></p></div><ol class="rlist level-5 ch-0"></ol></li></ol></li></ol></li></ol></li></ol>
+
+        </div>
+    
+
+
+
+
+        
+        <div class="article__section article__comments">
+
+
+
+        
+        <div class="colored-block__title">
+ <h2 id="sec-comments" class="section__title left-bordered-title">Comments</h2>
+</div>
+
+
+
+
+        
+        <div id="disqus_thread"></div><a href="https://dl.acm.org/doi/pdf/10.1145/1165734.1165739#disqus_thread" class="disqus-count hidden"></a><script>var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = '10.1145/1165734.1165739';
+    this.page.remote_auth_s3 = '';
+    this.page.api_key = 'MmWj4FlWmXk20FJsmWMXbTJoZT7TVzTsc9Rw0yrJp3L1ZNXZuvmxF3F5rFIF8RqQ';
+};
+(function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://acm-prod.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();</script><noscript>Please enable JavaScript to view the<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><script id="dsq-count-scr" src="//acm-prod.disqus.com/count.js" async=""></script>
+</div>
+</div><div class="pill-content"><div id="pill-access"><div class="pill-access__content">
+
+
+
+        
+        <div class="pill-access__content"><div class="section__separator"><h3 class="left-bordered-title">Login options</h3><div class="section__content"><p class="info--text">Check if you have access through your login credentials or your institution to get full access on this article.</p><a href="/action/showLogin?redirectUri=/doi/pdf/10.1145/1165734.1165739" title="Sign in" class="btn big btn--inverse">Sign in</a></div></div><div class="section__separator"><h3 class="left-bordered-title">Full Access</h3><div class="section__content"><a href="/action/publisherEcommerceHelper?doi=10.1145/1165734.1165739&amp;redirectUri=https://dl.acm.org/doi/pdf/10.1145/1165734.1165739" title="Get this Article" class="btn blue big">Get this Article</a></div></div></div>
+</div></div><div id="pill-information"><div class="tab tab--flex"><ul role="tablist" class="rlist tab__nav"><li role="presentation" class="active"><a id="pill-information__contentcon" href="#pill-information__content" aria-controls="pill-information__content" role="tab" data-toggle="tab" title="Information" aria-selected="true" data-simple-tab-id="" tabindex="0">Information</a></li><li role="presentation"><a id="pill-authors__contentcon" href="#pill-authors__content" aria-controls="pill-authors__content" role="tab" data-toggle="tab" title="Authors" aria-selected="false" data-simple-tab-id="" tabindex="-1">Contributors</a></li></ul><ul class="rlist tab__content"><li id="pill-information__content" aria-labelledby="pill-information__contentcon" role="tabpanel" aria-hidden="false" tabindex="0" class="tab__pane active"><div class="pill-information__content"><div class="section__separator"><h3 class="left-bordered-title">Published in</h3><div class="section__content cover-image-journal">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3CoverImage" data-widget-id="3095e6f5-a638-4f66-bb85-bbf4b03381ac" class="left-side-image">
+        
+
+
+
+        
+        <div class="cover-image"><div class="cover-image__image"><img src="/specs/products/acm/releasedAssets/images/Default_image_lazy-0687af31f0f1c8d4b7a22b686995ab9b.svg" data-src="/cms/asset/8d306e4f-a18c-440f-9072-3ab73cd81be8/large_placeholder_cover.png" alt="cover image ACM Transactions on Computer-Human Interaction" class="lazy"/></div><div class="cover-image__details"><div class="journal-meta"><span class="serial-title">ACM Transactions on Computer-Human Interaction</span>&nbsp;<span class="serial-info"> Volume 13, Issue 2</span></div><div class="cover-date">June 2006</div><div class="cover-pages">173  pages</div><div class="cover-image__details-extra"><div class="flex-container"><span class="bold">ISSN:</span><span class="space">1073-0516</span></div><div class="flex-container"><span class="bold">EISSN:</span><span class="space">1557-7325</span></div><div class="flex-container"><span class="bold">DOI:</span><span class="space">10.1145/1165734</span></div><a href="/toc/tochi/2006/13/2" class="toc--link">Issue’s Table of Contents</a></div><div class="pb-dropzone" data-pb-dropzone="metadataDisplayExtra" title="metadataDisplayExtra"></div></div></div>
+
+        </div>
+    
+<p class="copyrights small">Copyright © 2006 ACM</p></div></div><div class="section__separator proceedingInfo-sponsors hidden"><h3 class="left-bordered-title">Sponsors</h3><ul class="proceedingInfo-sponsors__list"></ul></div><div class="section__separator proceedingInfo-inCoop hidden"><h3 class="left-bordered-title">In-Cooperation</h3><ul class="proceedingInfo-inCoop__list"></ul></div><div class="section__separator"><h3 class="left-bordered-title">Publisher</h3><div class="section__content publisher"><div class="inlineBlock"></div><div class="inlineBlock"><p class="publisher__name">Association for Computing Machinery</p><p class="publisher__address">New York, NY, United States</p></div></div></div><div class="section__separator inline-section p-3"><h3 class="left-bordered-title">Check for updates</h3><a data-target="crossmark"><img alt="Check for updates on crossmark" src="/specs/products/acm/releasedAssets/images/CrossMarkIcon-d6fb3282a56d93dd889e4259d1cf4bd1.svg" class="crossmark__mini__logo ml-5 mt-sm-2 mt-xs-2 ml-lg-5 mb-2"/></a></div>
+
+<div class="section__separator"><h3 class="left-bordered-title">Author Tags</h3><div class="section__content"><div class="tags-widget"><div class="tags-widget__content"><ul class="rlist--inline"><li><a href="/keyword/visual languages?expand=all" title="visual languages" class="badge-type">visual languages</a></li><li><a href="/keyword/visual programming?expand=all" title="visual programming" class="badge-type">visual programming</a></li><li><a href="/keyword/Graph grammars?expand=all" title="Graph grammars" class="badge-type">Graph grammars</a></li><li><a href="/keyword/diagram parsing?expand=all" title="diagram parsing" class="badge-type">diagram parsing</a></li><li><a href="/keyword/spatial specification?expand=all" title="spatial specification" class="badge-type">spatial specification</a></li></ul></div></div></div></div><div class="section__separator"><h3 class="left-bordered-title">Qualifiers</h3><ul class="qualifiers__list"><li class="capitalized qualifiers__list__item">article</li></ul></div><div class="section__separator proceedingInfo-conference hidden"><h3 class="left-bordered-title">Conference</h3></div><div class="section__separator funding-sources hidden"><h3 class="left-bordered-title">Funding Sources</h3><ul class="funding-list"></ul></div></div></li><li id="pill-authors__content" aria-labelledby="pill-authors__contentcon" role="tabpanel" aria-hidden="true" class="tab__pane"><div class="pill-authors__content"><div class="section__separator"><div class="pill-authors-list"><div class="expandable-accordion"><div class="pill-normalized-authors">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3BibliometricsWidget" data-widget-id="e7d55c1d-243e-4d38-8e1f-59bc13f4487e" class="contrib-metrics-bibliometrics">
+        
+
+
+
+        
+        <div class="contrib-metrics-wrapper accordion-tabbed__tab">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="f156d5b7-4ebc-4825-9820-acb30ea65641" class="clearfix">
+        
+
+
+
+        
+        <h2 class="left-bordered-title pull-left">Contributor Metrics</h2><a class="pull-right expand-all" href="/" aria-expanded="false">Expand All </a>
+
+        </div>
+    
+<div data-sectionname="Authors" data-numberOfLiToShow="4"><div class="contrib-metrics-bibliometrics"><div class="accordion authors-accordion"><ul class="accordion-tabbed rlist loa clearfix"><li class="accordion-tabbed__tab accordion__closed grid-item"><div class="accordion-tabbed__control">
+    <input class="contrib-id" type="hidden" value="10.1145/contrib-81408600332"/>
+    <div class="auth-image">
+        
+            <a href="/profile/81408600332">
+                <img src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" alt='' aria-hidden="true" width="56" height="56">
+            </a>    
+        
+    </div>
+    <div class="auth-info" style="word-break: break-word; width: 70%;">
+        <span class="auth-name">
+            <a href="/profile/81408600332" title="Expand to see Bibliometrics: publication history">Jun  Kong</a>
+        </span>
+        <span class="info--text auth-institution">
+             North Dakota State University 
+        </span>
+    </div>
+</div><div aria-labelledby="adItem-0_Ctrl" style="display: none;" id="adItem-0" class="accordion-tabbed__content"><ul class="rlist auth-metrics metrics__list separated-block--dashed--top"><li><span class="metric-name">Publication Years</span><span class="metric-value">2003 - 2021</span></li><li><span class="metric-name">Publication counts</span><span class="metric-value">41</span></li><li><span class="metric-name">Available for Download</span><span class="metric-value">5</span></li><li><span class="metric-name">Citation count</span><span class="metric-value">232</span></li><li><span class="metric-name">Downloads (cumulative)</span><span class="metric-value">3,183</span></li><li><span class="metric-name">Downloads (6 weeks)</span><span class="metric-value">11</span></li><li><span class="metric-name">Downloads (12 months)</span><span class="metric-value">45</span></li><li><span class="metric-name">Average Citation per Article</span><span class="metric-value">6</span></li><li><span class="metric-name">Average Downloads per Article</span><span class="metric-value">637</span></li></ul><div class="view-profile separated-block--dashed--top"><a href="/profile/81408600332" title="View Full Profile" class="btn transparent stretched">View Full Profile<i aria-hidden="true" class="icon-export"></i></a></div></div></li><li class="accordion-tabbed__tab accordion__closed grid-item"><div class="accordion-tabbed__control">
+    <input class="contrib-id" type="hidden" value="10.1145/contrib-81350576955"/>
+    <div class="auth-image">
+        
+            <a href="/profile/81350576955">
+                <img src="/do/10.1145/contrib-81350576955/pill-img-name-aff/KangPortrait09.jpg" alt='' aria-hidden="true" width="56" height="56">
+            </a>    
+        
+    </div>
+    <div class="auth-info" style="word-break: break-word; width: 70%;">
+        <span class="auth-name">
+            <a href="/profile/81350576955" title="Expand to see Bibliometrics: publication history">K. Zhang</a>
+        </span>
+        <span class="info--text auth-institution">
+             The University of Texas at Dallas 
+        </span>
+    </div>
+</div><div aria-labelledby="adItem-1_Ctrl" style="display: none;" id="adItem-1" class="accordion-tabbed__content"><ul class="rlist auth-metrics metrics__list separated-block--dashed--top"><li><span class="metric-name">Publication Years</span><span class="metric-value">1995 - 2023</span></li><li><span class="metric-name">Publication counts</span><span class="metric-value">155</span></li><li><span class="metric-name">Available for Download</span><span class="metric-value">45</span></li><li><span class="metric-name">Citation count</span><span class="metric-value">509</span></li><li><span class="metric-name">Downloads (cumulative)</span><span class="metric-value">14,150</span></li><li><span class="metric-name">Downloads (6 weeks)</span><span class="metric-value">118</span></li><li><span class="metric-name">Downloads (12 months)</span><span class="metric-value">475</span></li><li><span class="metric-name">Average Citation per Article</span><span class="metric-value">3</span></li><li><span class="metric-name">Average Downloads per Article</span><span class="metric-value">314</span></li></ul><div class="view-profile separated-block--dashed--top"><a href="/profile/81350576955" title="View Full Profile" class="btn transparent stretched">View Full Profile<i aria-hidden="true" class="icon-export"></i></a></div></div></li><li class="accordion-tabbed__tab accordion__closed grid-item"><div class="accordion-tabbed__control">
+    <input class="contrib-id" type="hidden" value="10.1145/contrib-81319505316"/>
+    <div class="auth-image">
+        
+            <a href="/profile/81319505316">
+                <img src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" alt='' aria-hidden="true" width="56" height="56">
+            </a>    
+        
+    </div>
+    <div class="auth-info" style="word-break: break-word; width: 70%;">
+        <span class="auth-name">
+            <a href="/profile/81319505316" title="Expand to see Bibliometrics: publication history">Xiaoqin  Zeng</a>
+        </span>
+        <span class="info--text auth-institution">
+             Hohai University 
+        </span>
+    </div>
+</div><div aria-labelledby="adItem-2_Ctrl" style="display: none;" id="adItem-2" class="accordion-tabbed__content"><ul class="rlist auth-metrics metrics__list separated-block--dashed--top"><li><span class="metric-name">Publication Years</span><span class="metric-value">2001 - 2022</span></li><li><span class="metric-name">Publication counts</span><span class="metric-value">41</span></li><li><span class="metric-name">Available for Download</span><span class="metric-value">5</span></li><li><span class="metric-name">Citation count</span><span class="metric-value">213</span></li><li><span class="metric-name">Downloads (cumulative)</span><span class="metric-value">1,819</span></li><li><span class="metric-name">Downloads (6 weeks)</span><span class="metric-value">23</span></li><li><span class="metric-name">Downloads (12 months)</span><span class="metric-value">50</span></li><li><span class="metric-name">Average Citation per Article</span><span class="metric-value">5</span></li><li><span class="metric-name">Average Downloads per Article</span><span class="metric-value">364</span></li></ul><div class="view-profile separated-block--dashed--top"><a href="/profile/81319505316" title="View Full Profile" class="btn transparent stretched">View Full Profile<i aria-hidden="true" class="icon-export"></i></a></div></div></li></ul></div></div></div>
+
+
+
+</div>
+
+        </div>
+    
+</div><!--.pill-all-authors.authors-accordion.disable-truncate.hidden(aria-hidden="true")--><!--    if(data.item && data.item.contribsFull)--><!--        | !{data.item.contribsFull}--></div></div></div><div class="section__separator"><h3 class="left-bordered-title">Other Metrics</h3><div class="section__content badges"><a href="#pill-bibliometrics__contentcon" data-slide-target="#pill-metric" data-tab="pill-bibliometrics__content" data-ctrl-res="screen-xlg" data-full-screen="false" data-label="&lt;i class=&quot;icon-metric &quot;&gt;&lt;/i&gt;Bibliometrics &amp; Citations" class="btn big stretched btn--inverse w-slide__btn tab-link pill-content">View Article Metrics</a></div></div></div></li></ul></div></div><div id="pill-metric"><div class="tab tab--flex"><ul role="tablist" class="rlist tab__nav"><li role="presentation" class="active"><a id="pill-bibliometrics__contentcon" href="#pill-bibliometrics__content" aria-controls="pill-bibliometrics__content" role="tab" data-toggle="tab" title="Bibliometrics" aria-selected="true" data-simple-tab-id="" tabindex="0">Bibliometrics</a></li><li role="presentation"><a id="pill-citations__contentcon" href="#pill-citations__content" data-ajaxurl="/action/ajaxShowCitedBy?widgetId=8e46140b-7e42-4c62-9295-13ae241fcad0&amp;ajax=true&amp;doi=10.1145%2F1165734.1165739&amp;pbContext=%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BsubPage%3Astring%3AAccess+Denial%3Bcsubtype%3Astring%3AJournal%3BserialTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BrequestedJournal%3Ajournal%3Atochi%3Bpage%3Astring%3AArticle%2FChapter+View%3Bctype%3Astring%3AJournal+Content%3Bjournal%3Ajournal%3Atochi%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F1165734.1165739%3Bwebsite%3Awebsite%3Adl-site%3Btaxonomy%3Ataxonomy%3Aacm-pubtype%3BpageGroup%3Astring%3APublication+Pages%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F1165734" data-component="pubAjaxContent" data-ajaxtarget="#pill-citations__content .citedBy" aria-controls="pill-citations__content" role="tab" data-toggle="tab" title="Citations" aria-selected="false" data-simple-tab-id="" tabindex="-1" class="loadAjax loadLazyAjax">Citations<span class="citation-count count-bubble">56</span></a></li></ul><ul class="rlist tab__content"><li id="pill-bibliometrics__content" aria-labelledby="pill-bibliometrics__contentcon" role="tabpanel" aria-hidden="false" tabindex="0" class="tab__pane active"><div class="pill-bibliometrics__content"><div class="section__separator"><h3 class="left-bordered-title">Article Metrics</h3><div class="section__content"><ul class="rlist--inline article-metrics"><li><div class="article-metric citation"><div class="metric-value"><span>56</span></div>Total Citations</div><a href="#pill-citations__contentcon" data-tab="pill-citations__content" data-slide-target="#pill-metric" data-full-screen="false" data-ctrl-res="screen-xlg" class="primary-blue-color w-slide__btn tab-link slide-active pill-content">View Citations</a></li><li><div class="article-metric download"><div class="metric-value"><span>1,446</span></div>Total Downloads</div></li></ul><ul class="rlist metrics__list"><li><span class="metric-name">Downloads (Last 12 months)</span><span class="metric-value">12</span></li><li><span class="metric-name">Downloads (Last 6 weeks)</span><span class="metric-value">6</span></li></ul></div></div><div class="section__separator"><h3 class="left-bordered-title">Other Metrics</h3><div class="section__content"><a href="#pill-authors__contentcon" data-slide-target="#pill-information" data-ctrl-res="screen-xlg" data-tab="pill-authors__content" data-full-screen="false" data-label="&lt;i class=&quot;icon-Icon_Information &quot;&gt;&lt;/i&gt;Information &amp; Authors" class="btn big stretched btn--inverse w-slide__btn tab-link pill-content">View Author Metrics</a></div></div></div></li><li id="pill-citations__content" aria-labelledby="pill-citations__contentcon" role="tabpanel" aria-hidden="true" class="tab__pane"><div class="pill-citations__content"><div class="section__separator"><div class="header-container"><h3 class="left-bordered-title citedBy-label">Cited By</h3><a id="downloadAll" href="/action/ajaxShowCitedBy?doi=10.1145/1165734.1165739" target="_blank" title="View all cited by in new tab" class="btn btn--rounded ml-0 mt-0 mb-0 pl-2 blue pull-right">View all<i class="icon-export ml-2"></i></a><ol class="rlist references__list citedBy mt-5"></ol></div></div></div></li></ul></div></div><div id="pill-formats"><div class="pill-formats__content"><div class="section__separator de-format hidden"><h3 class="left-bordered-title">Digital Edition</h3><div class="section__content"><p class="info--text">View this article in digital edition.</p><a href="#" title="View Digital Edition" class="btn big stretched blue"><i aria-hidden="true" class="icon-open-book"></i>View Digital Edition</a></div></div></div></div><div id="pill-references"><div class="pill-references__content"></div></div><div id="pill-media"><div class="tab tab--flex"><ul role="tablist" class="rlist tab__nav"><li role="presentation" class="active"><a id="pill-fig__contentcon" href="#pill-fig__content" aria-controls="pill-fig__content" role="tab" data-toggle="tab" title="Figures" aria-selected="true" data-simple-tab-id="" tabindex="0">Figures</a></li><li role="presentation"><a id="pill-media__contentcon" href="#pill-media__content" aria-controls="pill-media__content" role="tab" data-toggle="tab" title="Other" aria-selected="false" data-simple-tab-id="" tabindex="-1">Other</a></li></ul><div class="pill-figures__content"><ul class="rlist tab__content"><li id="pill-fig__content" aria-labelledby="pill-fig__contentcon" role="tabpanel" aria-hidden="false" tabindex="0" class="tab__pane active"></li><li id="pill-media__content" aria-labelledby="pill-media__contentcon" role="tabpanel" aria-hidden="true" class="tab__pane"><ul class="rlist pill-media__content"></ul></li></ul></div></div></div><div id="pill-tables"><div class="pill-tables__content"></div></div><div id="pill-share"><div class="pill-share__content"><div class="section__separator"><h3 class="left-bordered-title">Share this Publication link</h3><div class="section__content copy__text-wrapper"><fieldset><p id="shareable-link__text" class="copy__text">https://dl.acm.org/doi/pdf/10.1145/1165734.1165739</p><button type="submit" class="btn big btn--inverse copy__btn"><i aria-hidden="true" class="icon-pages"></i>Copy Link</button></fieldset></div></div><div class="section__separator"><h3 class="left-bordered-title">Share on Social Media</h3><div class="section__content"><div class="visible-service-name">
+
+
+
+        
+        <!-- Go to https://www.addtoany.com/buttons/customize/ to customize your tools --><script type="text/javascript" defer="defer" src="https://static.addtoany.com/menu/page.js"></script><div class="share__block share__inline-links"><div class="pb-dropzone" data-pb-dropzone="shareBlock" title="shareBlock"></div><span class="sr-only">Share on</span><ul class="rlist--inline a2a a2a_kit a2a_kit_size_32 a2a_default_style"><li><a role="link" title="Twitter" class="a2a_button_twitter"></a></li><li><a role="link" title="Linked In" class="a2a_button_linkedin"></a></li><li><a role="link" title="Reddit" class="a2a_button_reddit"></a></li><li><a role="link" title="Facebook" class="a2a_button_facebook"></a></li><li><a role="link" title="Email" class="a2a_button_email"></a></li><div class="pb-dropzone" data-pb-dropzone="share-additional-links" title="share-additional-links"></div></ul></div>
+</div></div></div></div></div></div></div><div class="col-sm-2 pill-section"><div data-stop-on=".more-issue__section" class="pill-icons"><ul class="rlist pill-list"><li title="Information &amp; Authors"><button aria-haspopup="dialog" aria-controls="w-slideElement" data-slide-target="#pill-information" data-ctrl-res="screen-xlg" data-full-screen="false" title="Information and Authors" data-label="&lt;i class=&quot;icon-Icon_Information&quot;&gt;&lt;/i&gt;Information &amp; Authors" class="w-slide__btn pill-information"><i aria-hidden="true" class="icon-Icon_Information"></i></button></li><li title="Bibliometrics &amp; Citations"><button aria-haspopup="dialog" aria-controls="w-slideElement" data-slide-target="#pill-metric" data-ctrl-res="screen-xlg" data-full-screen="false" data-label="&lt;i class=&quot;icon-metric &quot;&gt;&lt;/i&gt;Bibliometrics &amp; Citations" title="Bibliometrics and Citations" class="w-slide__btn pill-metric"><i aria-hidden="true" class="icon-metric"></i></button></li><li title="Get Access"><a href="javascript:void(0);" data-slide-target="#pill-access" data-ctrl-res="screen-xlg" data-full-screen="false" title="Get Access" data-label="&lt;i class=&quot;icon-get-access&quot;&gt;&lt;/i&gt;Get Access" class="w-slide__btn pill-access"><i class="icon-get-access"></i></a></li><li title="References"><button aria-haspopup="dialog" aria-controls="w-slideElement" data-slide-target="#pill-references" data-ctrl-res="screen-xlg" data-full-screen="false" title="References" data-label="&lt;i class=&quot;icon-Icon_Links-References&quot;&gt;&lt;/i&gt;References" class="w-slide__btn pill-references"><i aria-hidden="true" class="icon-Icon_Links-References"></i><span class="refNum count-bubble">0<span class="sr-only">References</span></span></button></li><li title="Media"><button aria-haspopup="dialog" aria-controls="w-slideElement" data-slide-target="#pill-media" data-ctrl-res="screen-xlg" data-full-screen="false" title="Media" data-label="&lt;i class=&quot;icon-Icon_Images&quot;&gt;&lt;/i&gt;Media" data-ajaxtarget="#pill-fig__content" data-component="pubAjaxContent" data-action="onResponse" data-ajaxurl="/action/ajaxShowFigures?widgetId=8e46140b-7e42-4c62-9295-13ae241fcad0&amp;ajax=true&amp;doi=10.1145%2F1165734.1165739&amp;pbContext=%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BsubPage%3Astring%3AAccess+Denial%3Bcsubtype%3Astring%3AJournal%3BserialTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BrequestedJournal%3Ajournal%3Atochi%3Bpage%3Astring%3AArticle%2FChapter+View%3Bctype%3Astring%3AJournal+Content%3Bjournal%3Ajournal%3Atochi%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F1165734.1165739%3Bwebsite%3Awebsite%3Adl-site%3Btaxonomy%3Ataxonomy%3Aacm-pubtype%3BpageGroup%3Astring%3APublication+Pages%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F1165734" class="w-slide__btn loadAjax-auto pill-media"><i aria-hidden="true" class="icon-Icon_Images"></i></button></li><li title="Tables"><button aria-haspopup="dialog" aria-controls="w-slideElement" data-slide-target="#pill-tables" data-ctrl-res="screen-xlg" title="Tables" data-full-screen="false" data-label="&lt;i class=&quot;icon-table&quot;&gt;&lt;/i&gt;Tables" data-ajaxtarget=".pill-tables__content" data-component="pubAjaxContent" data-action="onResponse" data-ajaxurl="/action/ajaxShowTables?widgetId=8e46140b-7e42-4c62-9295-13ae241fcad0&amp;ajax=true&amp;doi=10.1145%2F1165734.1165739&amp;pbContext=%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BsubPage%3Astring%3AAccess+Denial%3Bcsubtype%3Astring%3AJournal%3BserialTopic%3Atopic%3Aacm-pubtype%26gt%3Bjournal%3BrequestedJournal%3Ajournal%3Atochi%3Bpage%3Astring%3AArticle%2FChapter+View%3Bctype%3Astring%3AJournal+Content%3Bjournal%3Ajournal%3Atochi%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F1165734.1165739%3Bwebsite%3Awebsite%3Adl-site%3Btaxonomy%3Ataxonomy%3Aacm-pubtype%3BpageGroup%3Astring%3APublication+Pages%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F1165734" class="w-slide__btn loadAjax-auto pill-tables"><i aria-hidden="true" class="icon-table"></i></button></li><li title="Share"><button aria-haspopup="dialog" aria-controls="w-slideElement" data-slide-target="#pill-share" data-ctrl-res="screen-xlg" data-full-screen="false" title="Share" data-label="&lt;i class=&quot;icon-Icon_Share&quot;&gt;&lt;/i&gt;Share" class="w-slide__btn pill-share pill-content"><i aria-hidden="true" class="icon-Icon_Share"></i></button></li></ul></div></div></div></article><div id="figure-viewer" data-ux3-wrapper="figure-viewer" data-ux3-transformed-by="figureInit" data-ux3-role="parent" role="dialog" aria-label="Figure Viewer" class="figure-viewer"><div class="figure-viewer__reg__top clearfix"><div class="figure-viewer__top__right"><a title="Zoom In" href="#" class="figure-viewer__ctrl figure-viewer__ctrl__zoom zoomSetting"><div aria-hidden="true" class="icon-zoom-in zoom-in"></div></a><a title="Zoom Out" href="#" class="figure-viewer__ctrl figure-viewer__label__zoom zoomSetting"><div aria-hidden="true" class="icon-zoom-out zoom-out"></div></a><a title="Open Caption" href="#" class="figure-viewer__ctrl figure-viewer__ctrl__caption"><i aria-hidden="true" class="icon-Icon_Information"></i></a><a href="#" data-ux3-role="controller" role="button" title="close" class="figure-viewer__ctrl figure-viewer__ctrl__close"><i aria-hidden="true" class="icon-cancel-bold"><span class="sr-only">Close Figure Viewer</span></i></a></div><h4 class="figure-viewer__top__center"></h4><div class="figure-viewer__top__left"><a href="#" role="button" title="Browse All" class="figure-viewer__ctrl__browse"><i aria-hidden="true" class="icon-grid-3"><span class="sr-only">Browse All</span></i></a><a href="#" role="button" title="Return" class="figure-viewer__ctrl__return is-hidden"><i aria-hidden="true" class="icon-cancel-bold"><span class="sr-only">Return</span></i></a><span class="zoomSlider js__zoom-slider ui-slider zoomSetting"><label for="figure-viewer__zoom-range" class="sr-only">Change zoom level</label><input type="range" id="figure-viewer__zoom-range" class="zoom-range"/></span></div></div><div class="figure-viewer__reg__center"><div class="figure-viewer__cent__left"><div class="figure-viewer__hold__fig"><div class="holder"></div></div><div class="figure-viewer__hold__list"><h3 class="figure-viewer__browse-title"></h3><div class="flex-grid"></div></div></div><div class="figure-viewer__cent__right"><div class="figure-viewer__caption-header"><h3 class="figure-viewer__caption-label">Caption</h3><a title="Close Caption" href="#" class="pull-right figure-viewer__close-caption figure-viewer__ctrl__caption"><i aria-hidden="true" class="icon-cancel-bold"></i></a></div><div class="figure-viewer__caption-wrapper"><div class="figure-viewer__title"><span class="figure-viewer__title__text"></span></div><div class="figure-viewer__hold__figcap"></div></div></div></div></div>
+
+        </div>
+    
+
+
+
+
+        
+        <div class="separated-block--dashed align-center"><a href="/toc/tochi/2006/13/2" class="btn btn--inverse big">View Issue’s Table of Contents</a></div>
+
+
+
+
+        
+        <div role="dialog" aria-labelledby="exportCitationsPopup" class="ux-modal-container"><div id="exportCitation" class="modal"><div class="modal__dialog"><div class="modal__header"><button type="button" data-dismiss="modal" class="close"><i aria-hidden="true" aria-label="close popup" class="icon-close_thin"></i></button><h2 id="exportCitationsPopup">Export Citations</h2></div><div class="modal__body"><div class="exportCitation__tabs"><div class="tab"><ul role="tablist" class="rlist tab__nav"></ul></div><div class="csl-wrapper copy__text-wrapper"><form action="/action/exportCiteProcCitation" method="post" target="_blank"><input type="hidden" name="content" value=""/><input type="hidden" name="dois" value=""/><input type="hidden" name="format" value=""/><fieldset class="input-group"><label for="citation-format" class="visibility-hidden">Select Citation format</label><select id="citation-format" data-csl-doi="10.1145/1165734.1165739" aria-label="Select Citation format"><option value="bibtex" data-format="bibTex">BibTeX</option><option value="endNote" data-format="endNote">EndNote</option><option value="acm" data-format="text">ACM Ref</option></select><span class="select-arrow"><i class="icon-bottom-arrow"></i></span></fieldset><ul class="rlist tab__content"><li id="allResultstab" aria-labelledby="allResults" role="tabpanel" class="tab__pane"><div class="all-results-tab-container"><div class="hidden warning-message mb-2">Please download or close your previous search result export first before starting a new bulk export.</div><div class="desc-text"><div class="bold">Preview is not available.</div>By clicking download,<b class="ml-1">a status dialog</b> will open to start the export process. The process may take<b class="ml-1">a few minutes</b> but once it finishes a file will be downloadable from your browser. You may continue to browse the DL while the export process is in progress.</div><a href="#" title="Download" data-href="/action/searchCitationExport?query=DOI%3D10.1145%252F1165734.1165739%26target%3Dindex-terms" class="btn transparent downloadBtn"><i aria-hidden="true" class="icon-Icon_Download"></i>Download<i aria-hidden="true" class="icon-export"></i></a></div></li><li id="selectedTab" aria-labelledby="selected" role="tabpanel" class="tab__pane active"><div class="csl-wrapper copy__text-wrapper"><pre class="copy__text csl-response"></pre><div id="export-warning"></div><div class="pull-right"><ul role="menu" class="rlist--inline separator"><li><a href="javascript:void(0)" role="menuitem" title="Download citation" class="download__btn disabled"><label class="visibility-hidden">Download citation</label><i aria-hidden="true" class="icon-Icon_Download"></i></a></li><li><input type="hidden" id="doisLimitNumber" value="1000"/><a href="javascript:void(0)" role="menuitem" title="Copy citation" class="copy__btn disabled"><label class="visibility-hidden">Copy citation</label><i aria-hidden="true" class="icon-pages"></i></a></li></ul></div></div></li></ul></form></div></div></div></div></div></div>
+</main>
+
+        </div>
+    
+
+
+
+
+        
+        <footer class="footer">
+
+
+
+        
+        <div class="back-to-top clearfix">
+    <i class="icon-arrow_u_p"></i>
+</div>
+
+
+
+
+        
+        <div class="footer-top">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="81a18a14-d709-41fd-9bb6-25a7fc1e13df" class="container">
+        
+
+
+
+        
+        <div class="row sitemap">
+
+
+
+        
+        <div class="col-sm-2 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="5b00ef28-f63b-4518-bd06-da82035f86ca" class="sitemap__data">
+        
+
+
+
+        
+        <div class="bold" style="margin-bottom: 18px;">Categories</div>
+<ul class="rlist">
+    <li><a href="/journals" title="Browse a listing of ACM’s Journals">Journals</a></li>
+    <li><a href="/magazines" title="Browse ACM's Magazines">Magazines</a></li>
+    <li><a href="/acmbooks" title="Browse new Releases of ACM Books">Books</a></li>
+    <li><a href="/proceedings" title="Browse the ACM Proceedings">Proceedings</a></li>
+    <li><a href="/sigs" title="Browse the Special Interest Groups">SIGs</a></li>
+    <li><a href="/conferences" title="Browse the Conferences">Conferences</a></li>
+    <li><a href="/collections" title="Browse the Special Collections">Collections</a></li>
+    <li><a href="/people" title="Discover ACM’s community of authors">People</a></li>
+</ul>
+
+        </div>
+    
+</div><div class="col-sm-4 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="731f98d3-e996-490d-a071-e9b966b32e2d" class="sitemap__data">
+        
+
+
+
+        
+        <div class="bold" style="margin-bottom: 18px;">About</div>
+<ul class="rlist">
+    <li><a href="/about">About ACM Digital Library</a></li>
+    <li><a href="/about/dlboard" title="ACM DL Board - Governance and Support Staff">ACM Digital Library Board</a></li>
+    <li><a href="/about/access" title="Accessing the DL">Subscription Information</a></li>
+    <li><a href="https://www.acm.org/publications/authors/information-for-authors" title="Information for Authors">Author Guidelines</a></li>
+    <li><a href="/about/access" title="Accessing the DL">Using ACM Digital Library</a></li>
+    <li><a href="/about/content#sec2">All Holdings within the ACM Digital Library</a></li>
+    <li><a href="/ccs" title="Classify publications using ACM's Computing Classification System">ACM Computing Classification System</a></li>
+     <li><a href="/about/accessibility" title="Digital Library Accessibility">Digital Library Accessibility</a></li>
+</ul>
+
+        </div>
+    
+</div><div class="col-sm-3 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="d4ed040d-22e8-481c-a7ef-0cac141f5246" class="sitemap__data">
+        
+
+
+
+        
+        <div class="bold" style="margin-bottom: 18px;">Join</div>
+<ul class="rlist">
+    <li><a href="https://www.acm.org/membership/join">Join ACM</a></li>
+    <li><a href="https://www.acm.org/special-interest-groups/join">Join SIGs</a></li>
+    <li><a href="https://www.acm.org/publications/subscribe">Subscribe to Publications</a></li>
+    <li><a href="https://libraries.acm.org/">Institutions and Libraries</a></li>
+</ul>
+
+        </div>
+    
+</div><div class="col-sm-3 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="4a649bf1-cf3f-472c-b764-dc3ab0cf4310" class="sitemap__data">
+        
+
+
+
+        
+        <b>Connect</b>
+<ul class="rlist social-media__connect">
+    <li><a href="/cdn-cgi/l/email-protection#284c44055c4d494568405906494b4506475a4f" title="email dl team"><i class="icon-Icon_mail" aria-hidden="true"></i><span>Contact</span></a></li>
+    <li><a href="https://www.facebook.com/AssociationForComputingMachinery/" title="ACM on facebook"><i class="icon-facebook" aria-hidden="true"></i><span>Facebook</span></a></li>
+    <li><a href="https://twitter.com/acmdl" title="Tweets from ACM DL"><i class="icon-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+    <li><a href="https://www.linkedin.com/company/association-for-computing-machinery/" title="acm  linkedin"><i class="icon-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+    <!--li><a href="#" title="icon-Rss"><i class="icon-Rss" aria-hidden="true"></i><span>RSS</span></a></li-->
+    <li><a onclick="srv.openModal(true,'02b075ed48492ef0e7598ddf9762f5ef668d7320')" title="Provide Feedback"><i class="icon-Icon_Information" aria-hidden="true"></i><span>Feedback</span></a></li>
+    <li><a onclick="srv.openModal(true,'02b075ed48492ef0e7598ddf9762f5ef668d7320')" title="Report a problem"><i class="icon-Icon_Information" aria-hidden="true"></i><span>Bug Report</span></a></li>
+</ul>
+
+        </div>
+    
+</div>
+</div>
+
+        </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="6e6da9b7-371e-4ea0-827e-8de5915b8cd5" class="footer-bottom text-onDark">
+        
+
+
+
+        
+        <div class="container"><div class="row"><div class="col-md-8 col-sm-6 footer__copyright-wrapper">
+
+
+
+        
+        <div class="copyright">The ACM Digital Library is published by the Association for Computing Machinery. Copyright © 2023 ACM, Inc.</div>
+<ul class="rlist--inline">
+    <li><a class="link-nocolor-nounderline" href="https://libraries.acm.org/digital-library/policies#anchor3">Terms of Usage</a></li>
+    <li><a class="link-nocolor-nounderline" href="https://www.acm.org/about-acm/privacy-policy">Privacy Policy</a></li>
+    <li><a class="link-nocolor-nounderline" href="https://www.acm.org/code-of-ethics">Code of Ethics</a></li>
+</ul>
+</div><div class="col-md-4 col-sm-6 footer__logos-wrapper">
+
+
+
+        
+        <div class="logos">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="42d543b3-ff9d-4f92-bf03-6d1fa00da8c6" class="footer__logo1">
+        
+
+
+
+        
+        <a href="/" title=""><img id="" alt="ACM Digital Library home" src="/specs/products/acm/releasedAssets/images/acm-logo-dl.png" loading="eager"/></a>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="5a0bc5df-cd95-408f-8ae5-8b1f40746519" class="footer__logo2">
+        
+
+
+
+        
+        <a href="https://www.acm.org" title=""><img id="" alt="ACM home" src="/specs/products/acm/releasedAssets/images/acm-logo-3.png" loading="eager"/></a>
+
+        </div>
+    
+</div>
+</div></div></div>
+
+        </div>
+    
+
+
+
+
+        
+        <!-- Mopinion Pastea.se  start --><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">(function(){var id="7zt4vp6rxi2bbpxuy9yzabob4fy2enwmumr";var js=document.createElement("script");var pbBtn=document.querySelector('.admin-bar-disclosure');if(!window.PB){js.setAttribute("src","//deploy.mopinion.com/js/pastease.js");document.getElementsByTagName("head")[0].appendChild(js);var t=setInterval(function(){try{new Pastease.load(id);clearInterval(t)}catch(e){}},50)}})();
+    </script><!-- Mopinion Pastea.se end -->
+</footer>
+
+
+
+
+        
+        <script type="text/javascript">
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function()
+    
+    {(h.hj.q=h.hj.q||[]).push(arguments)}
+    ;
+    h._hjSettings={hjid:1290436,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+
+        
+        <script type="text/javascript">
+    (function (w, d) {
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script");
+    var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";
+    s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+    s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+    w.lazyLoadOptions = {elements_selector: ".lazy", "class_loaded": "image-lazy-loaded"};
+    b.appendChild(s);
+}(window, document));
+</script>
+
+
+
+
+        
+        
+
+
+
+
+        
+        
+
+
+
+        
+    
+
+
+
+
+
+        
+        <div role="region" class="affs-popup"><input id="deleteCookie" type="hidden" name="deleteCookie" value="true"/></div>
+
+
+
+
+        
+        <div id="exportDownloadNotReady" role="region" class="searchCiteExport-popup hidden"><div class="searchCiteExport-popup__header"><i aria-hidden="true" class="icon-info"></i><span aria-label="Your Search Results Download Request" class="searchCiteExport-popup__title">Your Search Results Download Request</span><i aria-hidden="true" tabindex="0" class="icon-cancel-bold"> </i></div><div aria-label="Search Results Popup Body" class="searchCiteExport-popup__body clearfix"><p>We are preparing your search results for download ...</p><p>We will inform you here when the file is ready.</p><a href="#" disabled="disabled" class="btn blue pull-right">Download now!</a></div></div><div id="exportDownloadReady" role="region" class="searchCiteExport-popup hidden"><div class="searchCiteExport-popup__header"><i aria-hidden="true" class="icon-info"></i><span aria-label="Your Search Results Download Request" class="searchCiteExport-popup__title">Your Search Results Download Request</span><i aria-hidden="true" tabindex="0" class="icon-cancel-bold"></i></div><div aria-label="Search Results Popup Body" class="searchCiteExport-popup__body clearfix"><div class="csl-all-response hidden"></div><p>Your file of search results citations is now ready.</p><a href="#" class="btn blue searchCiteExport-popup__close pull-right">Download now!</a></div></div><div id="exportDownloadExpired" role="region" class="searchCiteExport-popup hidden"><div class="searchCiteExport-popup__header"><i aria-hidden="true" class="icon-info"></i><span aria-label="Your Search Results Download Request" class="searchCiteExport-popup__title">Your Search Results Download Request</span><i aria-hidden="true" tabindex="0" class="icon-cancel-bold"></i></div><div aria-label="Search Results Popup Body" class="searchCiteExport-popup__body clearfix"><p>Your search export query has expired. Please try again.</p></div></div>
+        </div>
+    </div>
+
+
+	
+    <script>if (typeof define !== 'undefined' && define.amd)
+    define.amd = false</script><script src="/products/acm/releasedAssets/js/main.bundle-c2f14b710f7d0654214c.js"></script><script>(function (w, d) {
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script");
+    var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";
+    s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+    s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+    w.lazyLoadOptions = {elements_selector: ".lazy", "class_loaded": "image-lazy-loaded"};
+    b.appendChild(s);
+}(window, document));</script>
+<script type="text/javascript" src="/wro/mla7~product.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(() => setTimeout(() => {
+            let _bnw=window,_bna=atob("bG9jYXRpb24="),_bnb=atob("b3JpZ2lu"),_hn=_bnw[_bna][_bnb],_bnt=btoa(_hn+new Array(5 - _hn.length % 4).join(" "));
+            $.get("/resource/lodash?t="+_bnt);
+        },4000));
+    </script>
+
+
+
+<script>(function(){var js = "window['__CF$cv$params']={r:'81b8a52f2fb2cfa4',t:'MTY5ODIxNzg4NC4zNDQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"81b8a52f2fb2cfa4","version":"2023.10.0","token":"b7f168b3cd354a55a4dd51b513830799"}' crossorigin="anonymous"></script>
+</body>
+</html>

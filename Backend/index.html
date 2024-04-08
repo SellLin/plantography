@@ -1,0 +1,453 @@
+
+<!DOCTYPE html> 
+<html> 
+<meta charset="utf-8"> 
+<head> 
+  <!-- <title>d3.line.curve()</title>  -->
+</head> 
+<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"> 
+</script> 
+  
+<body> 
+
+  <center> 
+    <svg id="gfg" width="1000" height="1000" style="overflow:visible;margin-top: 400px;"></svg> 
+</center> 
+  <script> 
+// var points = [ 
+//   {xpoint:25,  ypoint:150}, 
+//   {xpoint:75,  ypoint:85}, 
+//   {xpoint:100, ypoint:115}, 
+//   {xpoint:175, ypoint:25}]; 
+  
+var Gen = d3.line() 
+  .x((p) => p.x) 
+  .y((p) => p.y) 
+  .curve(d3.curveCatmullRom)
+  // .curve(d3.curveCardinal)
+  // .curve(d3.curveBasis); 
+let drag = d3.drag()
+    .on('start', dragStarted)
+    .on('drag', dragged)
+    .on('end', dragEnded);
+var x1;
+var y1;
+var x2;
+var y2;
+var startx;
+var starty;
+var endx;
+var endy;
+var lineId;
+var axesLen=50;
+var axes=[]
+var images=[]
+var points=[]
+var points2=[]
+var angles=[Math.PI/3,-Math.PI/3,Math.PI,2*Math.PI*Math.random(),2*Math.PI*Math.random()]
+function dragStarted()
+{
+
+  // x1=d3.select(this).attr("x1")
+  // y1=d3.select(this).attr("y1")
+  // x2=d3.select(this).attr("x1")
+  // y2=d3.select(this).attr("y1")
+  // startx=event.x;
+  // starty=event.y;
+  lineId=Number(d3.select(this).attr("lineId"))
+
+}
+function dragged()
+{
+  // let gapX=event.x-startx
+  // let gapY=event.y-starty
+
+  // console.log(gapX)
+  // console.log(x1)
+  // console.log(d3.select(this).attr("x1"))
+  // console.log(event.x)
+  // console.log(d3.select(this).attr("y1"))
+  // console.log(event.y)
+  // d3.select(this).attr("x1",d3.event.x+150)
+  // d3.select(this).attr("y1",d3.event.y+150)
+  // d3.select(this).attr("x2",d3.event.x+2*axesLen*Math.cos(angles[lineId])+150)
+  // d3.select(this).attr("y2",d3.event.y+2*axesLen*Math.sin(angles[lineId])+150)
+  // d3.select(this).attr("x2",x2+gapX)
+  // d3.select(this).attr("y2",y2+gapY)
+  d3.select(this).attr("x1",d3.mouse(this)[0])
+  d3.select(this).attr("y1",d3.mouse(this)[1])
+  d3.select(this).attr("x2",d3.mouse(this)[0]+2*axesLen*Math.cos(angles[lineId]))
+  d3.select(this).attr("y2",d3.mouse(this)[1]+2*axesLen*Math.sin(angles[lineId]))
+  d3.select("#origin"+lineId.toString()).attr("cx",d3.mouse(this)[0]).attr("cy",d3.mouse(this)[1])
+  console.log(d3.select(this).attr("x1"))
+  console.log(d3.event.x)
+  // console.log(event.offsetX)
+  console.log(d3.select(this).attr("y1"))
+  console.log(d3.event.y)
+  console.log("mouse:")
+  console.log(d3.mouse(this));
+}
+function dragEnded()
+{
+  axes[lineId]["x"]=(Number(d3.select(this).attr("x1"))+axesLen*Math.cos(angles[lineId])-200)/600
+  axes[lineId]["y"]=(Number(d3.select(this).attr("y1"))+axesLen*Math.cos(angles[lineId])-200)/600
+  d3.selectAll(".link").remove()
+  d3.selectAll(".axisPoint").remove()
+  d3.selectAll(".imPoint").remove()
+  svg=d3.select("#gfg")
+  let allLines=[]
+  let allLines1=[]
+  let allLines2=[]
+  let allcolors=[]
+  let mul=0.045
+  for (let i=0;i<900;i++)
+  {
+    let mainAxis
+    if (images[i]["lab"]==0)
+    {
+      mainAxis= {x:200+600*axes[0]["x"]+(2*images[i]["Picasso"]-1)*axesLen*Math.cos(angles[0]),  y:200+600*axes[0]["y"]+(2*images[i]["Picasso"]-1)*axesLen*Math.sin(angles[0])}
+    }
+    else if (images[i]["lab"]==1)
+    {
+      mainAxis={x:200+600*axes[1]["x"]+(2*images[i]["Monet"]-1)*axesLen*Math.cos(angles[1]),  y:200+600*axes[1]["y"]+(2*images[i]["Monet"]-1)*axesLen*Math.sin(angles[1])}
+    }
+    else
+    {
+      mainAxis={x:200+600*axes[2]["x"]+(2*images[i]["VanGogh"]-1)*axesLen*Math.cos(angles[2]),  y:200+600*axes[2]["y"]+(2*images[i]["VanGogh"]-1)*axesLen*Math.sin(angles[2])}
+    }
+    let bridge={x:200+600*axes[3]["x"]+(2*images[i]["bridge"]-1)*axesLen*Math.cos(angles[3]),  y:200+600*axes[3]["y"]+(2*images[i]["bridge"]-1)*axesLen*Math.sin(angles[3])}
+    let waterlily={x:200+600*axes[4]["x"]+(2*images[i]["waterlily"]-1)*axesLen*Math.cos(angles[4]),  y:200+600*axes[4]["y"]+(2*images[i]["waterlily"]-1)*axesLen*Math.sin(angles[4])}
+    let point = [ 
+      mainAxis,
+      {x:200+600*images[i]["x"],  y:200+600*images[i]["y"]}, 
+      bridge,
+      waterlily
+    ]; 
+    let point2 = [ 
+      mainAxis,
+      {x:200+600*images[i]["x"],  y:200+600*images[i]["y"]}, 
+      waterlily
+    ]; 
+    allLines.push(mainAxis)
+    allLines1.push(bridge)
+    allLines2.push(waterlily)
+    // console.log(point)
+    let color
+    let color1
+    if (images[i]["lab"]==0)
+    {
+      color= "#f5a9bc";
+      color1="red"
+    }
+    else if (images[i]["lab"]==1)
+    {
+      color= "#a9bcf5";
+      color1= "blue"
+    }
+    else
+    {
+      color= "#f2f5a9"
+      color1= "yellow"
+    }
+    allcolors.push(color1)
+      svg.append("path") 
+      .attr("d", Gen(point))
+      .attr("class","link") 
+      .attr("fill", "none") 
+      .attr("stroke", color); 
+      svg.append("path") 
+      .attr("d", Gen(point2)) 
+      .attr("class","link")
+      .attr("fill", "none") 
+      .attr("stroke", color); 
+  }
+  svg.selectAll(".imPoint")
+  .data(images).enter()
+  .append("circle")
+  .attr("class","imPoint")
+  .attr("cx",function(d,i){return 200+600*d["x"]})
+  .attr("cy",function(d,i){return 200+600*d["y"]})
+  .attr("r",3)
+  .style("fill",function(d,i){
+    if (images[i]["lab"]==0)
+    {
+      return "red"
+    }
+    else if (images[i]["lab"]==1)
+    {
+      return "blue"
+    }
+    else
+    {
+      return "yellow"
+    }
+  })
+  .style("stroke","black")
+  for (let i=0;i<900;i++)
+  {
+    svg.append("circle")
+      .attr("cx",allLines[i]["x"])
+      .attr("cy",allLines[i]["y"])
+      .attr("class","axisPoint")
+      .attr("r",1)
+      .style("fill",allcolors[i])
+    svg.append("circle")
+      .attr("cx",allLines1[i]["x"])
+      .attr("cy",allLines1[i]["y"])
+      .attr("class","axisPoint")
+      .attr("r",1)
+      .style("fill",allcolors[i])  
+    svg.append("circle")
+      .attr("cx",allLines2[i]["x"])
+      .attr("cy",allLines2[i]["y"])
+      .attr("class","axisPoint")
+      .attr("r",1)
+      .style("fill",allcolors[i])  
+  }
+}    
+// d3.select("#gfg") 
+//   .append("path") 
+//   .attr("d", Gen(points)) 
+//   .attr("fill", "none") 
+//   .attr("stroke", "green"); 
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+d3.csv("./static/fouraxis3.csv", function(data) {
+
+  for (let i=0;i<900;i++){
+    images.push(data[i])
+    if (i<300)
+    {
+      images[i]["lab"]=0
+    }
+    else if (i<600)
+    {
+      images[i]["lab"]=1
+    }
+    else
+    {
+      images[i]["lab"]=2
+    }
+    
+  }
+  shuffle(images)
+  
+  for (let i=900;i<data.length;i++)
+  {
+    axes.push(data[i])
+  }
+  // console.log(axes)
+  let centerX=(Number(axes[0]["x"])+Number(axes[1]["x"])+Number(axes[2]["x"]))/3
+  let centerY=(Number(axes[0]["y"])+Number(axes[1]["y"])+Number(axes[2]["y"]))/3
+  // console.log(axes[1]["x"])
+  // console.log(axes[2]["x"])
+  // console.log(axes[3]["x"])
+  // console.log(centerX)
+  let side=0.045
+  // let side=0.68
+  axes[0]["x"]=centerX+side*Math.cos(-Math.PI/6)
+  axes[0]["y"]=centerY+side*Math.sin(-Math.PI/6)
+  axes[1]["x"]=centerX+side*Math.cos(-5*Math.PI/6)
+  axes[1]["y"]=centerY+side*Math.sin(-5*Math.PI/6)
+  axes[2]["x"]=centerX+side*Math.cos(-3*Math.PI/2)
+  axes[2]["y"]=centerY+side*Math.sin(-3*Math.PI/2)
+  // axes[3]["x"]=1.38
+  // axes[3]["y"]=0.8
+  // axes[4]["x"]=1.18
+  // axes[4]["y"]=-0.1
+  // axes[0]["x"]=Number(data[data.length-1]["x"])+1.5
+  // axes[0]["y"]=data[data.length-1]["y"]
+  let svg=d3.select("#gfg") 
+  
+  // for (let i=0;i<4;i++)
+  // {
+  //   angles.push(2*Math.PI*Math.random())
+  // }
+  
+  let allLines=[]
+  let allLines1=[]
+  let allLines2=[]
+  let allcolors=[]
+  let mul=0.045
+  for (let i=0;i<900;i++)
+  {
+    let mainAxis
+    if (images[i]["lab"]==0)
+    {
+      mainAxis= {x:200+600*axes[0]["x"]+(2*images[i]["Picasso"]-1)*axesLen*Math.cos(angles[0]),  y:200+600*axes[0]["y"]+(2*images[i]["Picasso"]-1)*axesLen*Math.sin(angles[0])}
+    }
+    else if (images[i]["lab"]==1)
+    {
+      mainAxis={x:200+600*axes[1]["x"]+(2*images[i]["Monet"]-1)*axesLen*Math.cos(angles[1]),  y:200+600*axes[1]["y"]+(2*images[i]["Monet"]-1)*axesLen*Math.sin(angles[1])}
+    }
+    else
+    {
+      mainAxis={x:200+600*axes[2]["x"]+(2*images[i]["VanGogh"]-1)*axesLen*Math.cos(angles[2]),  y:200+600*axes[2]["y"]+(2*images[i]["VanGogh"]-1)*axesLen*Math.sin(angles[2])}
+    }
+    // let point = [ 
+    //   {x:200+600*images[i]["x"],  y:200+600*images[i]["y"]}, 
+    //   {x:200+600*axes[0]["x"]+(2*images[i]["bridge"]-1)*axesLen*Math.cos(angles[0]),  y:200+600*axes[0]["y"]+(2*images[i]["bridge"]-1)*axesLen*Math.sin(angles[0])}, 
+    //   {x:200+600*axes[1]["x"]+(2*images[i]["Picasso"]-1)*axesLen*Math.cos(angles[1]),  y:200+600*axes[1]["y"]+(2*images[i]["Picasso"]-1)*axesLen*Math.sin(angles[1])}, 
+    //   {x:200+600*axes[2]["x"]+(2*images[i]["Monet"]-1)*axesLen*Math.cos(angles[2]),  y:200+600*axes[2]["y"]+(2*images[i]["Monet"]-1)*axesLen*Math.sin(angles[2])},
+    //   {x:200+600*axes[3]["x"]+(2*images[i]["VanGogh"]-1)*axesLen*Math.cos(angles[3]),  y:200+600*axes[3]["y"]+(2*images[i]["VanGogh"]-1)*axesLen*Math.sin(angles[3])}
+    // ]; 
+    let bridge={x:200+600*axes[3]["x"]+(2*images[i]["bridge"]-1)*axesLen*Math.cos(angles[3]),  y:200+600*axes[3]["y"]+(2*images[i]["bridge"]-1)*axesLen*Math.sin(angles[3])}
+    let waterlily={x:200+600*axes[4]["x"]+(2*images[i]["waterlily"]-1)*axesLen*Math.cos(angles[4]),  y:200+600*axes[4]["y"]+(2*images[i]["waterlily"]-1)*axesLen*Math.sin(angles[4])}
+    let point = [ 
+      mainAxis,
+      {x:200+600*images[i]["x"],  y:200+600*images[i]["y"]}, 
+      bridge,
+      waterlily
+    ]; 
+    let point2 = [ 
+      mainAxis,
+      {x:200+600*images[i]["x"],  y:200+600*images[i]["y"]}, 
+      waterlily
+    ]; 
+    allLines.push(mainAxis)
+    allLines1.push(bridge)
+    allLines2.push(waterlily)
+    // console.log(point)
+    let color
+    let color1
+    if (images[i]["lab"]==0)
+    {
+      color= "#f5a9bc";
+      color1="red"
+    }
+    else if (images[i]["lab"]==1)
+    {
+      color= "#a9bcf5";
+      color1= "blue"
+    }
+    else
+    {
+      color= "#f2f5a9"
+      color1= "yellow"
+    }
+    allcolors.push(color1)
+      svg.append("path") 
+      .attr("d", Gen(point))
+      .attr("class","link") 
+      .attr("fill", "none") 
+      .attr("stroke", color); 
+      svg.append("path") 
+      .attr("d", Gen(point2)) 
+      .attr("class","link")
+      .attr("fill", "none") 
+      .attr("stroke", color); 
+  }
+  // let axes0=[]
+  // for (let i=1;i<4;i++)
+  // {
+  //   axes0.push(axes[i])
+  // }
+
+  svg.selectAll(".axes")
+  .data(axes).enter()
+  .append("line")
+  .attr("class","axes")
+  .attr("lineId",function(d,i){return i})
+  .attr("x1",function(d,i){return 200+600*d["x"]-axesLen*Math.cos(angles[i])})
+  .attr("y1",function(d,i){return 200+600*d["y"]-axesLen*Math.sin(angles[i])})
+  .attr("x2",function(d,i){return 200+600*d["x"]+axesLen*Math.cos(angles[i])})
+  .attr("y2",function(d,i){return 200+600*d["y"]+axesLen*Math.sin(angles[i])})
+  .style("stroke","gray").style("stroke-width","8px")
+  .call(drag)
+
+
+  // svg.append("line")
+  // .attr("class","axes")
+  // .attr("x1", 200+600*axes[0]["x"]-mul*axesLen*Math.cos(angles[0]))
+  // .attr("y1", 200+600*axes[0]["y"]-mul*axesLen*Math.sin(angles[0]))
+  // .attr("x2", 200+600*axes[0]["x"]+mul*axesLen*Math.cos(angles[0]))
+  // .attr("y2", 200+600*axes[0]["y"]+mul*axesLen*Math.sin(angles[0]))
+  // .style("stroke","gray").style("stroke-width","8px")
+
+  svg.selectAll(".imPoint")
+  .data(images).enter()
+  .append("circle")
+  .attr("class","imPoint")
+  .attr("cx",function(d,i){return 200+600*d["x"]})
+  .attr("cy",function(d,i){return 200+600*d["y"]})
+  .attr("r",3)
+  .style("fill",function(d,i){
+    if (images[i]["lab"]==0)
+    {
+      return "red"
+    }
+    else if (images[i]["lab"]==1)
+    {
+      return "blue"
+    }
+    else
+    {
+      return "yellow"
+    }
+  })
+  .style("stroke","black")
+  for (let i=0;i<900;i++)
+  {
+    svg.append("circle")
+      .attr("cx",allLines[i]["x"])
+      .attr("cy",allLines[i]["y"])
+      .attr("class","axisPoint")
+      .attr("r",1)
+      .style("fill",allcolors[i])
+    svg.append("circle")
+      .attr("cx",allLines1[i]["x"])
+      .attr("cy",allLines1[i]["y"])
+      .attr("class","axisPoint")
+      .attr("r",1)
+      .style("fill",allcolors[i])  
+    svg.append("circle")
+      .attr("cx",allLines2[i]["x"])
+      .attr("cy",allLines2[i]["y"])
+      .attr("class","axisPoint")
+      .attr("r",1)
+      .style("fill",allcolors[i])  
+  }
+
+  svg.selectAll(".startPoint")
+  .data(axes).enter()
+  .append("circle")
+  .attr("class","startPoint")
+  .attr("id",function(d,i){return "origin"+i.toString()})
+  .attr("cx",function(d,i){return 200+600*d["x"]-axesLen*Math.cos(angles[i])})
+  .attr("cy",function(d,i){return 200+600*d["y"]-axesLen*Math.sin(angles[i])})
+  .attr("r",10)
+  .style("fill","gray")
+  .style("stroke","black")
+  .style("stroke-width","2px")
+  // svg.append("circle")
+  // .attr("class","startPoint")
+  // .attr("cx",200+600*axes[0]["x"]-mul*axesLen*Math.cos(angles[0]))
+  // .attr("cy",200+600*axes[0]["y"]-mul*axesLen*Math.sin(angles[0]))
+  // .attr("r",10)
+  // .style("fill","gray")
+  // .style("stroke","black")
+  // .style("stroke-width","2px")
+
+
+
+});
+  
+</script> 
+</body> 
+</html>
