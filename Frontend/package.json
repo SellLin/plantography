@@ -14,6 +14,8 @@
     "element-plus": "^2.2.17",
     "pinia": "^2.0.21",
     "svg-sprite-loader": "^2.0.3",
+    "vis": "^4.21.0-EOL",
+    "vis-network": "^9.1.9",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },

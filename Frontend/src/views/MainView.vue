@@ -1,166 +1,262 @@
 <template>
   <!--  <div style="display:flex;background-color: rgb(97, 108, 24); padding: 8px; flex-direction: row-reverse">-->
-  <div style="display:flex;background-color: #616d17; padding: 8px;  border-radius: 33px;">
+  <div
+    style="
+      display: flex;
+      background-color: #616d17;
+      padding: 8px;
+      border-radius: 33px;
+    "
+  >
     <!--    writes icons-->
     <div id="icon" style="display: flex; justify-content: center">
       <svg x="100" width="290" height="200" xmlns="http://www.w3.org/2000/svg">
-        <text
-            :transform="textTransform1"
-            :style="textStyle1"
-        >
+        <text :transform="textTransform1" :style="textStyle1">
           <tspan :x="tspan1X" :y="tspan1Y" :style="tspan1Style">Pla</tspan>
           <tspan :x="tspan2X" :y="tspan2Y" :style="tspan2Style">n</tspan>
           <tspan :x="tspan3X" :y="tspan3Y" :style="tspan3Style">t</tspan>
           <tspan :x="tspan4X" :y="tspan4Y" :style="tspan4Style">o</tspan>
         </text>
-        <text
-            :transform="textTransform2"
-            :style="textStyle2"
-        >
+        <text :transform="textTransform2" :style="textStyle2">
           <tspan :x="tspan5X" :y="tspan5Y">g</tspan>
           <tspan :x="tspan6X" :y="tspan6Y" :style="tspan6Style">r</tspan>
           <tspan :x="tspan7X" :y="tspan7Y">aphy</tspan>
         </text>
-        <circle :cx="circleCX" :cy="circleCY" :r="circleR" :style="circleStyle"></circle>
+        <circle
+          :cx="circleCX"
+          :cy="circleCY"
+          :r="circleR"
+          :style="circleStyle"
+        ></circle>
         <path :d="pathD" :style="pathStyle"></path>
       </svg>
     </div>
 
-
     <!--    text area-->
-    <div style="display: flex;flex-direction: column; position: absolute; top: 15vh; left:25px; width: 260px;">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15vh;
+        left: 25px;
+        width: 260px;
+      "
+    >
       <div
-          style="height: 30px; font-family: Montserrat-Bold,serif; font-size:20px; font-weight:600; color: white; margin-left: 5px; margin-top: 13px; text-align: start">
+        style="
+          height: 30px;
+          font-family: Montserrat-Bold, serif;
+          font-size: 20px;
+          font-weight: 600;
+          color: white;
+          margin-left: 5px;
+          margin-top: 13px;
+          text-align: start;
+        "
+      >
         Idea
       </div>
-      <el-input 
-          class="el-textarea__inner"
-          type="textarea"
-          :autosize="{minRows: 19, maxRows: 25}"
-          placeholder="Please draw your idea here"
-          v-model="textarea2">
+      <el-input
+        class="el-textarea__inner"
+        type="textarea"
+        :autosize="{ minRows: 19, maxRows: 25 }"
+        placeholder="Please draw your idea here"
+        v-model="textarea2"
+      >
       </el-input>
-      <button @click="get_message" style="border-radius: 18px; background: #d8d8b6; height: 35px">Generate</button>
-
+      <button
+        @click="get_message"
+        style="border-radius: 18px; background: #d8d8b6; height: 35px"
+      >
+        Generate
+      </button>
     </div>
 
-
-
-    <div style="z-index: 100;">
-      <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <div style="z-index: 100">
+      <svg
+        class="icon"
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path d="M256 102.4v819.2l512-409.6L256 102.4z"></path>
       </svg>
     </div>
 
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 58vh;
+        left: 25px;
+        width: 260px;
+      "
+    >
+      <!--      <div class="block">-->
+      <!--         <el-slider-->
+      <!--      v-model="weather"-->
+      <!--      :step="1"-->
+      <!--      :show-tooltip="false"-->
+      <!--      :min="0"-->
+      <!--      :max="3"-->
+      <!--      >-->
+      <!--    </el-slider>-->
+      <!--  </div>-->
 
-    <div style="display: flex;flex-direction: column; position: absolute; top: 58vh; left:25px; width: 260px;">
-
-<!--      <div class="block">-->
-<!--         <el-slider-->
-<!--      v-model="weather"-->
-<!--      :step="1"-->
-<!--      :show-tooltip="false"-->
-<!--      :min="0"-->
-<!--      :max="3"-->
-<!--      >-->
-<!--    </el-slider>-->
-<!--  </div>-->
-
-<!--      <div class="slider-container">-->
-<!--  <div class="weather-icon sun">☀️</div>-->
-<!--  <div class="weather-icon cloud">☁️</div>-->
-<!--  <div class="weather-icon rain">🌧️</div>-->
-<!--  <div class="weather-icon snow">❄️</div>-->
-<!--  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
-<!--</div>-->
-  <div class="weather-slider">
+      <!--      <div class="slider-container">-->
+      <!--  <div class="weather-icon sun">☀️</div>-->
+      <!--  <div class="weather-icon cloud">☁️</div>-->
+      <!--  <div class="weather-icon rain">🌧️</div>-->
+      <!--  <div class="weather-icon snow">❄️</div>-->
+      <!--  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
+      <!--</div>-->
+      <div class="weather-slider" style="border-radius: 6px;">
         <div class="weather-icons">
-      <div v-for="(icon, index) in weatherIcons" :key="icon" class="weather-icon" :style="{ left: `${iconPositions[index]}%` }">
-        <img :src="icon" :id="'icon'+index" alt="" height="30" width="30" class="icon_image"/>
-      </div>
-    </div>
-<!--        <div class="icon-container" v-for="(mark, index) in marks" :key="index" :style="{ left: (index * 33.33) + '%' }">-->
-<!--      <img :src="getIconPath(index)" class="weather-icon" alt=""/>-->
-<!--    </div>-->
-    <el-slider
-      v-model="sliderValue"
-      :min="0"
-      :max="3"
-      :step="1"
-      :show-tooltip="false"
-      @input="onSliderChange"
-      :handle-style="handleStyles"
-    />
-  </div>
-
-      <div class="weather-slider">
-<!--        <div class="icon-container" v-for="(mark, index) in marks" :key="index" :style="{ left: (index * 33.33) + '%' }">-->
-<!--      <img :src="getIconPath(index)" class="weather-icon" alt=""/>-->
-<!--    </div>-->
-<!--        <div class="tick-mark" v-for="mark in marks" :style="{ left: calculateTickPosition(mark) }"></div>-->
-    <el-slider
-      v-model="sliderValue1"
-      :min="0"
-      :max="3"
-      :show-tooltip="false"
-      :marks="marks"
-      @input="onSliderChange1"
-    />
-<!--        <div class="tick-mark" v-for="mark in marks" :style="{ left: calculateTickPosition(mark) }"></div>-->
-
-  </div>
-        <div class="style-keywords">
-      <button class="keyword-btn">Realistic</button>
-      <button class="keyword-btn">Cubist</button>
-      </div>
-       <div class="style-keywords" style="margin-top:20px">
-      <button class="keyword-btn">Watercolor</button>
-      <button class="keyword-btn">Ethereal</button>
+          <div
+            v-for="(icon, index) in weatherIcons"
+            :key="icon"
+            class="weather-icon"
+            :style="{ left: `${iconPositions[index]}%` }"
+          >
+            <img
+              :src="icon"
+              :id="'icon' + index"
+              alt=""
+              height="30"
+              width="30"
+              class="icon_image"
+            />
+          </div>
         </div>
-       <div class="style-keywords" style="margin-top:20px">
-      <button class="keyword-btn">Oil painting</button>
-      <button class="keyword-btn">Fine details</button>
+        <!--        <div class="icon-container" v-for="(mark, index) in marks" :key="index" :style="{ left: (index * 33.33) + '%' }">-->
+        <!--      <img :src="getIconPath(index)" class="weather-icon" alt=""/>-->
+        <!--    </div>-->
+        <el-slider
+          v-model="sliderValue"
+          :min="0"
+          :max="3"
+          :step="1"
+          :show-tooltip="false"
+          @input="onSliderChange"
+          :handle-style="handleStyles"
+        />
+      </div>
 
-<!--      <button class="keyword-btn">...</button>-->
+      <div class="weather-slider" style="border-radius: 6px;">
+        <!--        <div class="icon-container" v-for="(mark, index) in marks" :key="index" :style="{ left: (index * 33.33) + '%' }">-->
+        <!--      <img :src="getIconPath(index)" class="weather-icon" alt=""/>-->
+        <!--    </div>-->
+        <!--        <div class="tick-mark" v-for="mark in marks" :style="{ left: calculateTickPosition(mark) }"></div>-->
+        <el-slider
+          v-model="sliderValue1"
+          :min="0"
+          :max="3"
+          :show-tooltip="false"
+          :marks="marks"
+          @input="onSliderChange1"
+        />
+        <!--        <div class="tick-mark" v-for="mark in marks" :style="{ left: calculateTickPosition(mark) }"></div>-->
+      </div>
+      <div class="style-keywords">
+        <button class="keyword-btn">Realistic</button>
+        <button class="keyword-btn">Cubist</button>
+      </div>
+      <div class="style-keywords" style="margin-top: 20px">
+        <button class="keyword-btn">Watercolor</button>
+        <button class="keyword-btn">Ethereal</button>
+      </div>
+      <div class="style-keywords" style="margin-top: 20px">
+        <button class="keyword-btn">Oil painting</button>
+        <button class="keyword-btn">Fine details</button>
 
-    </div>
+        <!--      <button class="keyword-btn">...</button>-->
+      </div>
       <div
-          style="height: 30px; font-family: Montserrat-Bold,serif; font-size:20px; font-weight:600; color: white; margin-left: 5px; margin-top: 13px; text-align: start">
+        style="
+          height: 30px;
+          font-family: Montserrat-Bold, serif;
+          font-size: 20px;
+          font-weight: 600;
+          color: white;
+          margin-left: 5px;
+          margin-top: 13px;
+          text-align: start;
+        "
+      >
         Example
       </div>
 
-
-      <el-popover trigger="click" ref="setRemovePop" placement="top" :width="160">
-        <p>A picture of a real landscape with trees including a dogwood and a maple.</p>
+      <el-popover
+        trigger="click"
+        ref="setRemovePop"
+        placement="top"
+        :width="160"
+      >
+        <p>
+          A picture of a real landscape with trees including a dogwood and a
+          maple.
+        </p>
         <div style="text-align: right; margin: 0">
           <!--          <el-button size="small" text @click="cancelRemove()">取消</el-button>-->
           <!--          <el-button size="small" type="primary" @click="cancelRemove()">确定</el-button>-->
         </div>
         <template #reference>
           <el-button
-              style="position: relative; top: 1vh;background-color: #858938; border: none; font-family: Montserrat-Bold,serif;font-size:15px; color: white;">
+            style="
+              position: relative;
+              top: 1vh;
+              background-color: #858938;
+              border: none;
+              font-family: Montserrat-Bold, serif;
+              font-size: 15px;
+              color: white;
+            "
+          >
             a dogwood and a maple...
           </el-button>
         </template>
       </el-popover>
 
-      <el-popover trigger="click" ref="setRemovePop" placement="top" :width="160">
-        <p>A picture of a real landscape with trees including a dogwood and a angelica.</p>
+      <el-popover
+        trigger="click"
+        ref="setRemovePop"
+        placement="top"
+        :width="160"
+      >
+        <p>
+          A picture of a real landscape with trees including a dogwood and a
+          angelica.
+        </p>
         <div style="text-align: right; margin: 0">
           <!--          <el-button size="small" text @click="cancelRemove()">取消</el-button>-->
           <!--          <el-button size="small" type="primary" @click="cancelRemove()">确定</el-button>-->
         </div>
         <template #reference>
           <el-button
-              style="position: relative; top: 2vh; left: -12px; width: 100%;background-color: #858938; border: none; font-family: Montserrat-Bold,serif;font-size:15px;color: white">
+            style="
+              position: relative;
+              top: 2vh;
+              left: -12px;
+              width: 100%;
+              background-color: #858938;
+              border: none;
+              font-family: Montserrat-Bold, serif;
+              font-size: 15px;
+              color: white;
+            "
+          >
             a dogwood and a angelica...
           </el-button>
         </template>
       </el-popover>
 
-
-
-      <el-popover trigger="click" ref="setRemovePop" placement="top" :width="160">
+      <el-popover
+        trigger="click"
+        ref="setRemovePop"
+        placement="top"
+        :width="160"
+      >
         <p>A picture of a real landscape with a angelica and a birch.</p>
         <div style="text-align: right; margin: 0">
           <!--          <el-button size="small" text @click="cancelRemove()">取消</el-button>-->
@@ -168,27 +264,37 @@
         </div>
         <template #reference>
           <el-button
-              style="position: relative; top: 3vh; left: -12px; width: 100%;background-color: #858938; border: none; font-family: Montserrat-Bold,serif;font-size:15px;color: white">
+            style="
+              position: relative;
+              top: 3vh;
+              left: -12px;
+              width: 100%;
+              background-color: #858938;
+              border: none;
+              font-family: Montserrat-Bold, serif;
+              font-size: 15px;
+              color: white;
+            "
+          >
             A cheery tree in the park...
           </el-button>
         </template>
       </el-popover>
-
-
     </div>
-
 
     <div>
-      <RightView :back_data="back_data" style="height:calc(100vh - 10px);width:87vw"></RightView>
+      <RightView
+        :back_data="back_data"
+        style="height: calc(100vh - 10px); width: 87vw"
+      ></RightView>
     </div>
-
-
   </div>
-</template>`
+</template>
+`
 
 <script>
 import RightView from "../components/RightView.vue";
-import {inputCaption} from '../service/module/dataService'
+import { inputCaption } from "../service/module/dataService";
 import axios from "axios";
 import * as d3 from "d3";
 
@@ -202,7 +308,7 @@ export default {
       textStyle1: {
         fontFamily: "Montserrat-Bold",
         fontSize: "60px",
-        fontWeight: "700"
+        fontWeight: "700",
       },
       tspan1X: 0,
       tspan1Y: 0,
@@ -210,7 +316,7 @@ export default {
         fontFamily: "Montserrat-Bold",
         fontSize: "60px",
         fontWeight: "700",
-        fill: "#ffc215"
+        fill: "#ffc215",
       },
       tspan2X: 97.78,
       tspan2Y: 0,
@@ -219,7 +325,7 @@ export default {
         fontSize: "60px",
         fontWeight: "700",
         letterSpacing: "0pt",
-        fill: "#ffc215"
+        fill: "#ffc215",
       },
       tspan3X: 133.64,
       tspan3Y: 0,
@@ -228,7 +334,7 @@ export default {
         fontSize: "60px",
         fontWeight: "700",
         letterSpacing: "0pt",
-        fill: "#ffc215"
+        fill: "#ffc215",
       },
       tspan4X: 157.68,
       tspan4Y: 0,
@@ -236,14 +342,14 @@ export default {
         fontFamily: "Montserrat-Bold",
         fontSize: "60px",
         fontWeight: "700",
-        fill: "#ffffff"
+        fill: "#ffffff",
       },
       textTransform2: "translate(135 133.88)",
       textStyle2: {
         fontFamily: "Montserrat",
         fontSize: "31.58px",
         fontWeight: "700",
-        fill: "#efefe8"
+        fill: "#efefe8",
       },
       tspan5X: 0,
       tspan5Y: 0,
@@ -260,68 +366,82 @@ export default {
         fill: "#ffffff",
         stroke: "#ffffff",
       },
-      pathD: "m240.54,83.98c-.44,2.5-1.49,4.96-2.79,7.12-1.05,1.76-2.28,3.64-4.06,4.74-.91.57-2.09,1.01-3.17,1.1-1.56.14-3.14-.24-4.66-.57-.88-.19-1.32.27-1.58,1.08-.16.51.2,1.29.03,1.71-.21.54-.64.65-.95-.03-.43-.94.48-2.61,1.13-3.23-1.06-1.3-1.13-4.26-.65-5.77,1.85-5.73,8.26-7.78,13.7-7.1.25.03,3.08.39,2.98.95h0Z",
+      pathD:
+        "m240.54,83.98c-.44,2.5-1.49,4.96-2.79,7.12-1.05,1.76-2.28,3.64-4.06,4.74-.91.57-2.09,1.01-3.17,1.1-1.56.14-3.14-.24-4.66-.57-.88-.19-1.32.27-1.58,1.08-.16.51.2,1.29.03,1.71-.21.54-.64.65-.95-.03-.43-.94.48-2.61,1.13-3.23-1.06-1.3-1.13-4.26-.65-5.77,1.85-5.73,8.26-7.78,13.7-7.1.25.03,3.08.39,2.98.95h0Z",
       pathStyle: {
         fontFamily: "Times New Roman",
         fontSize: "16px",
-        fill: "#979e36"
+        fill: "#979e36",
       },
-      textarea2: '',
+      textarea2: "",
       visible: false,
       sliderValue: 0,
       sliderValue1: 0,
-      weatherIcons: ['./src/assets/icon/sun.svg', './src/assets/icon/cloud.svg', './src/assets/icon/rain.svg', './src/assets/icon/snow.svg'], // Replace with the paths to your images
-      iconPositions: [1, 30, 60, 90],//[-49, -16, 17, 50] // Position each icon over its corresponding discrete value
+      weatherIcons: [
+        "./src/assets/icon/sun.svg",
+        "./src/assets/icon/cloud.svg",
+        "./src/assets/icon/rain.svg",
+        "./src/assets/icon/snow.svg",
+      ], // Replace with the paths to your images
+      iconPositions: [1, 30, 60, 90], //[-49, -16, 17, 50] // Position each icon over its corresponding discrete value
       marks: {
-        0: '8:00',
-        1: '12:00',
-        2: '18:00',
-        3: '24:00'
-      }
-
+        0: "8:00",
+        1: "12:00",
+        2: "18:00",
+        3: "24:00",
+      },
     };
-
   },
-  components: {RightView},
+  components: { RightView },
   computed: {
     handleStyles() {
       return {
         backgroundColor: this.getHandleColor(this.sliderValue),
-        borderColor: this.getHandleColor(this.sliderValue)
+        borderColor: this.getHandleColor(this.sliderValue),
       };
-    }
+    },
   },
   methods: {
     get_message() {
-      console.log(this.textarea2)
+      console.log(this.textarea2);
       let vm = this;
-      let path = "http://127.0.0.1:5000/api/test/hello/"
-      axios.post(path, {
-        caption: this.textarea2
-      }).then(res => {
-        console.log(res)
-        this.back_data = res.data;
-        console.log(this.back_data)
-      }).catch(err => {
-        console.log(err)
-      })
+      let path = "http://127.0.0.1:5000/api/test/hello/";
+      axios
+        .post(path, {
+          caption: this.textarea2,
+        })
+        .then((res) => {
+          console.log(res);
+          this.back_data = res.data;
+          console.log(this.back_data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     },
     onSliderChange(value) {
       // Logic to handle the slider's value change
-      d3.selectAll(".icon_image").attr("width", 30).attr("height", 30)
-      d3.select("#icon"+value).attr("width", 45).attr("height", 45)
+      d3.selectAll(".icon_image").attr("width", 30).attr("height", 30);
+      d3.select("#icon" + value)
+        .attr("width", 45)
+        .attr("height", 45);
     },
     getIconPath(index) {
       // Return the path to the icon based on the index
       return this.icons[index];
     },
     getHandleColor(value) {
-      switch(value) {
-        case '0': return '#f7ac57'; // color for 8:00
-        case '1': return '#fffb00'; // color for 12:00
-        case '2': return '#b0d941'; // color for 18:00
-        case '3': return '#29aae1'; // color for 24:00
-        default: return '#fff';    // default color
+      switch (value) {
+        case "0":
+          return "#f7ac57"; // color for 8:00
+        case "1":
+          return "#fffb00"; // color for 12:00
+        case "2":
+          return "#b0d941"; // color for 18:00
+        case "3":
+          return "#29aae1"; // color for 24:00
+        default:
+          return "#fff"; // default color
       }
     },
     calculateTickPosition(mark) {
@@ -329,9 +449,9 @@ export default {
       const totalMarks = Object.keys(this.marks).length - 1;
       const position = (mark / totalMarks) * 100;
       return `${position}%`;
-    }
+    },
   },
-}
+};
 </script>
 
 <style>
@@ -352,8 +472,6 @@ export default {
   width: 80px;
   height: 100px;
 }
-
-
 </style>
 
 <style scoped>
@@ -370,13 +488,20 @@ export default {
 }
 
 .weather-slider /deep/ .el-slider__runway:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to right, #f7ac57, #fffb00 25%, #b0d941 50%, #29aae1 75%, #0d4f8b);
+  background: linear-gradient(
+    to right,
+    #f7ac57,
+    #fffb00 25%,
+    #b0d941 50%,
+    #29aae1 75%,
+    #0d4f8b
+  );
   border-radius: 3px; /* Match the runway's border-radius */
 }
 
@@ -417,7 +542,6 @@ export default {
 .weather-slider /deep/ .el-slider__marks-text {
   transform: translateX(-50%);
   color: #ffffff;
-
 }
 
 .weather-slider /deep/ .el-slider__marks {
@@ -520,5 +644,3 @@ export default {
 <!--  border: 2px solid grey;-->
 <!--}-->
 <!--</style>-->
-
-

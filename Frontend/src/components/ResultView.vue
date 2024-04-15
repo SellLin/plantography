@@ -12,7 +12,7 @@
 
       <!--  main  graph-->
     </div>
-    <div style="background: #ffffff; height: calc(89vh - 3px); border-radius: 18px; position: relative; top: 8vh">
+    <div style="background: #ffffff; height: calc(89vh - 3px); border-radius: 18px; position: relative; top: 8vh; box-shadow: 10px 4px 16px rgba(0, 0, 0, 0.3);">
      <div style="width:90%;height:80%;margin-left: 4%"> <img v-if="showImage" :src="imageSrc" alt=" " style="width:100%;height:100%;"> </div>
       <div
             style="height: 30px; margin-left: 50px; font-family: Montserrat-Bold,serif; font-size:26px; font-weight:600; color: rgb(97 108 24); margin-top: 13px; text-align: start;">
