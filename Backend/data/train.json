@@ -1,0 +1,647 @@
+[
+  {
+    "Image_id": "1.jpg",
+    "Caption": "A picture of a real landscape with trees including a dogwood and a maple. A dogwood is on the left of a maple.",
+    "Scene Graph": {
+      "objects": [
+        "dogwood",
+        "maple"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the left of",
+          1
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "dogwood",
+        [
+          1,
+          88,
+          257,
+          305
+        ]
+      ],
+      [
+        "maple",
+        [
+          281,
+          171,
+          231,
+          222
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "10.jpg",
+    "Caption": "A picture of a real landscape with trees including a dogwood and a maple. A maple is behind a dogwood, a maple is on the right of a dogwood.",
+    "Scene Graph": {
+      "objects": [
+        "dogwood",
+        "maple"
+      ],
+      "relationships": [
+        [
+          1,
+          "behind",
+          0
+        ],
+        [
+          1,
+          "on the right of",
+          0
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "dogwood",
+        [
+          0,
+          83,
+          300,
+          327
+        ]
+      ],
+      [
+        "maple",
+        [
+          226,
+          285,
+          89,
+          78
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "13.jpg",
+    "Caption": "A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush. A maple is on the left of a dogwood. A bush is in front of a dogwood.",
+    "Scene Graph": {
+      "objects": [
+        "dogwood",
+        "maple",
+        "bush"
+      ],
+      "relationships": [
+        [
+          1,
+          "on the left of",
+          0
+        ],
+        [
+          2,
+          "in front of",
+          0
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "dogwood",
+        [
+          140,
+          58,
+          369,
+          321
+        ]
+      ],
+      [
+        "maple",
+        [
+          0,
+          224,
+          212,
+          174
+        ]
+      ],
+      [
+        "bush",
+        [
+          191,
+          381,
+          321,
+          73
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "16.jpg",
+    "Caption": "A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush. A maple is on the left of a dogwood. A bush is in front of a dogwood.",
+    "Scene Graph": {
+      "objects": [
+        "dogwood",
+        "maple",
+        "bush"
+      ],
+      "relationships": [
+        [
+          1,
+          "on the left of",
+          0
+        ],
+        [
+          2,
+          "in front of",
+          0
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "dogwood",
+        [
+          161,
+          62,
+          339,
+          383
+        ]
+      ],
+      [
+        "maple",
+        [
+          7,
+          264,
+          241,
+          202
+        ]
+      ],
+      [
+        "bush",
+        [
+          280,
+          442,
+          171,
+          49
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "22.jpg",
+    "Caption": "A picture of a real landscape with trees including a dogwood, a angelica, shrubs with bush. A angelica is on the left of a dogwood. A dogwood is on the left of a bush.",
+    "Scene Graph": {
+      "objects": [
+        "angelica",
+        "dogwood",
+        "bush"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the left of",
+          1
+        ],
+        [
+          1,
+          "on the left of",
+          2
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "dogwood",
+        [
+          126,
+          73,
+          280,
+          353
+        ]
+      ],
+      [
+        "bush",
+        [
+          285,
+          408,
+          227,
+          59
+        ]
+      ],
+      [
+        "angelica",
+        [
+          4,
+          266,
+          188,
+          178
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "27.jpg",
+    "Caption": "A picture of a real landscape with trees including a acacia, a maple and a angelica, shrubs with bush. A acacia is on the left of a maple. A bush is in front of the maple. A angelica is on the left of a acacia.",
+    "Scene Graph": {
+      "objects": [
+        "acacia",
+        "maple",
+        "bush",
+        "angelica"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the left of",
+          1
+        ],
+        [
+          3,
+          "on the left of",
+          0
+        ],
+        [
+          2,
+          "in front of",
+          1
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "angelica",
+        [
+          24,
+          307,
+          135,
+          88
+        ]
+      ],
+      [
+        "maple",
+        [
+          271,
+          263,
+          174,
+          121
+        ]
+      ],
+      [
+        "acacia",
+        [
+          40,
+          146,
+          329,
+          254
+        ]
+      ],
+      [
+        "bush",
+        [
+          233,
+          388,
+          279,
+          69
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "33.jpg",
+    "Caption": "A picture of a real landscape with trees including a acacia, a dogwood and a maple, shrubs with a bush and a white_tulip. A dogwood is on the left of a maple. A maple is on the left of acacia. A bush is in front a dogwood and a maple. A white_tulip is in front of both a acacia.",
+    "Scene Graph": {
+      "objects": [
+        "dogwood",
+        "acacia",
+        "bush",
+        "white_tulip",
+        "maple"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the left of",
+          4
+        ],
+        [
+          2,
+          "in front of",
+          0
+        ],
+        [
+          2,
+          "in front of",
+          4
+        ],
+        [
+          3,
+          "in front of",
+          1
+        ],
+        [
+          4,
+          "on the left of",
+          1
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "dogwood",
+        [
+          22,
+          130,
+          170,
+          217
+        ]
+      ],
+      [
+        "maple",
+        [
+          212,
+          222,
+          153,
+          115
+        ]
+      ],
+      [
+        "acacia",
+        [
+          318,
+          154,
+          192,
+          181
+        ]
+      ],
+      [
+        "white_tulip",
+        [
+          336,
+          331,
+          131,
+          47
+        ]
+      ],
+      [
+        "bush",
+        [
+          38,
+          338,
+          297,
+          50
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "36.jpg",
+    "Caption": "A picture of a real landscape with trees including a acacia, a dogwood and a maple, shrubs with a bush and a white_tulip. A dogwood is on the left of a acacia. A acacia is on the left of a maple. A bush is in front a dogwood and a acacia. A white_tulip is in front of a maple.",
+    "Scene Graph": {
+      "objects": [
+        "dogwood",
+        "acacia",
+        "maple",
+        "white_tulip",
+        "bush"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the left of",
+          1
+        ],
+        [
+          1,
+          "on the left of",
+          2
+        ],
+        [
+          4,
+          "in front of",
+          0
+        ],
+        [
+          4,
+          "in front of",
+          1
+        ],
+        [
+          3,
+          "in front of",
+          2
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "bush",
+        [
+          0,
+          342,
+          301,
+          63
+        ]
+      ],
+      [
+        "white_tulip",
+        [
+          307,
+          343,
+          174,
+          48
+        ]
+      ],
+      [
+        "maple",
+        [
+          372,
+          223,
+          139,
+          119
+        ]
+      ],
+      [
+        "acacia",
+        [
+          105,
+          141,
+          216,
+          200
+        ]
+      ],
+      [
+        "dogwood",
+        [
+          13,
+          178,
+          131,
+          163
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "44.jpg",
+    "Caption": "A picture of a real landscape with trees including a bougainvillea, a acacia, shrubs with a bush and a alumroot. A bougainvillea is on the left of a acacia. A bush is in front of a bougainvillea and a acacia. A alumroot is in front of a bush.",
+    "Scene Graph": {
+      "objects": [
+        "bougainvillea",
+        "acacia",
+        "bush",
+        "alumroot"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the left of",
+          1
+        ],
+        [
+          2,
+          "in front of",
+          0
+        ],
+        [
+          2,
+          "in front of",
+          1
+        ],
+        [
+          3,
+          "in front of",
+          2
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "bush",
+        [
+          27,
+          364,
+          398,
+          53
+        ]
+      ],
+      [
+        "alumroot",
+        [
+          209,
+          391,
+          86,
+          53
+        ]
+      ],
+      [
+        "acacia",
+        [
+          150,
+          129,
+          296,
+          234
+        ]
+      ],
+      [
+        "bougainvillea",
+        [
+          25,
+          246,
+          159,
+          115
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  },
+  {
+    "Image_id": "55.jpg",
+    "Caption": "A picture of a real landscape with trees including a poinciane and a dogwood, shrubs with a bush, a white_tulip and a alumroot. A poinciane is on the right of a bush. A bush is in front of a poinciane. A alumroot is in front of a white_tulip. A white_tulip is in front of a bush. A dogwood is on the right of a poinciane.",
+    "Scene Graph": {
+      "objects": [
+        "poinciane",
+        "bush",
+        "white_tulip",
+        "alumroot",
+        "dogwood"
+      ],
+      "relationships": [
+        [
+          0,
+          "on the right of",
+          1
+        ],
+        [
+          1,
+          "in front of",
+          0
+        ],
+        [
+          2,
+          "in front of",
+          1
+        ],
+        [
+          3,
+          "in front of",
+          2
+        ],
+        [
+          4,
+          "on the right of",
+          0
+        ]
+      ]
+    },
+    "Objects": [
+      [
+        "poinciane",
+        [
+          70,
+          151,
+          206,
+          169
+        ]
+      ],
+      [
+        "dogwood",
+        [
+          312,
+          87,
+          189,
+          257
+        ]
+      ],
+      [
+        "bush",
+        [
+          2,
+          309,
+          317,
+          49
+        ]
+      ],
+      [
+        "white_tulip",
+        [
+          2,
+          357,
+          309,
+          39
+        ]
+      ],
+      [
+        "alumroot",
+        [
+          149,
+          387,
+          72,
+          39
+        ]
+      ]
+    ],
+    "Background prompt": "A picture of a real landscape."
+  }
+]

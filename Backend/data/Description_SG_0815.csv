@@ -1,0 +1,169 @@
+﻿image_name,Scenegraph,Description
+1.jpg,"""objects"": ['dogwood','maple'],
+""relationships"": [[0, ""on the left of"", 1]]","A picture of a real landscape with trees including a dogwood and a maple.
+A dogwood is on the left of a maple."
+2.jpg,"""objects"": ['dogwood','angelica'],
+""relationships"": [[0, ""on the left of"", 1]]","A picture of a real landscape with trees including a dogwood and a angelica.
+A dogwood is on the left of a angelica. "
+3.jpg,"""objects"": ['angelica','birch'],
+""relationships"": [[0, ""on the left of"", 1]]","A picture of a real landscape with a angelica and a birch.
+A angelica is on the left of a birch."
+4.jpg,"""objects"": ['angelica','dogwood'],
+""relationships"": [[0, ""on the left of"", 1]]","A picture of a real landscape with a angelica and a dogwood.
+A angelica is on the left of a dogwood."
+5.jpg,"""objects"": ['acacia','dogwood'],
+""relationships"": [[1, ""on the right of"", 0]]","A picture of a real landscape with trees including a acacia and a dogwood.
+A dogwood is on the right of a acacia. "
+6.jpg,"""objects"": ['angelica','dogwood'],
+""relationships"": [[0, ""on the left of"", 1]]","A picture of a real landscape with trees including a angelica and a dogwood.
+A angelica is on the left of a dogwood. "
+7.jpg,"""objects"": ['dogwood','angelica'],
+""relationships"": [[1, ""on the right of"", 0]]","A picture of a real landscape with trees including a dogwood and a angelica.
+A angelica is on the right of a dogwood. "
+8.jpg,"""objects"": ['dogwood','angelica'],
+""relationships"": [[1, ""in front of"", 0]]","A picture of a real landscape with trees including a dogwood and a angelica.
+A angelica is in front of a dogwood. "
+9.jpg,"""objects"": ['dogwood','maple'],
+""relationships"": [[1, ""on the right of"", 0]]","A picture of a real landscape with trees including a dogwood and a maple.
+A maple is on the right of a dogwood. "
+10.jpg,"""objects"": ['dogwood','maple'],
+""relationships"": [[1, ""behind"", 0],[1,""on the right of"",0]]","A picture of a real landscape with trees including a dogwood and a maple.
+A maple is behind a dogwood, a maple is on the right of a dogwood. "
+11.jpg,"""objects"": ['dogwood','maple'],
+""relationships"": [[1, ""behind"", 0],[1,""on the left of"",0]]","A picture of a real landscape with trees including a dogwood and a maple.
+A maple is behind a dogwood, a maple is on the left of a dogwood. "
+12.jpg,"""objects"": ['dogwood','maple'],
+""relationships"": [[0, ""on the right of"", 1]]","A picture of a real landscape with trees including a dogwood and a maple.
+A dogwood is on the right of a maple. "
+13.jpg,"""objects"": ['dogwood','maple', 'bush'],
+""relationships"": [[1, ""on the left of"", 0],[2,""in front of"",0]]","A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush.
+A maple is on the left of a dogwood. A bush is in front of a dogwood."
+14.jpg,"""objects"": ['maple','dogwood', 'bush'],
+""relationships"": [[0, ""on the right of"", 0],[2,""in front of"",0]]","A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush.
+A dogwood is on the right of a dogwood. A bush is in front of a maple."
+16.jpg,"""objects"": ['dogwood','maple', 'bush'],
+""relationships"": [[1, ""on the left of"", 0],[2,""in front of"",0]]","A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush.
+A maple is on the left of a dogwood. A bush is in front of a dogwood."
+17.jpg,"""objects"": ['dogwood','maple', 'bush'],
+""relationships"": [[1, ""on the left of"", 0],[2,""in front of"",0],[2,""in front of"",1]]","A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush.
+A maple is on the left of a dogwood. A bush is in front of both a dogwood and a maple."
+18.jpg,"""objects"": ['maple','dogwood', 'bush'],
+""relationships"": [[1, ""on the right of"", 0],[2,""in front of"",0]]","A picture of a real landscape with trees including a dogwood, a maple, shrubs with bush.
+A dogwood is on the right of a maple. A bush is in front of a maple."
+19.jpg,"""objects"": ['bush','dogwood'],
+""relationships"": [[1, ""on the right of"", 0]]","A picture of a real landscape with  a dogwood and a bush.
+A dogwood is on the right of a bush. "
+20.jpg,"""objects"": ['dogwood','angelica', 'bush'],
+""relationships"": [[1, ""on the left of"", 0],[2,""in front of"",0],[2,""in front of"",1]]","A picture of a real landscape with trees including a dogwood, a angelica, shrubs with bush.
+A angelica is on the left of a dogwood. A bush is in front of both a dogwood and a angelica."
+21.jpg,"""objects"": ['angelica','dogwood', 'bush'],
+""relationships"": [[0, ""on the right of"", 1],[2,""in front of"",0]]","A picture of a real landscape with trees including a dogwood, a angelica, shrubs with bush.
+A angelica is on the right of a dogwood. A bush is in front of a angelica."
+22.jpg,"""objects"": ['angelica','dogwood', 'bush'],
+""relationships"": [[0, ""on the left of"", 1],[1,""on the left of"",2]]","A picture of a real landscape with trees including a dogwood, a angelica, shrubs with bush.
+A angelica is on the left of a dogwood. A dogwood is on the left of a bush."
+23.jpg,"""objects"": ['angelica','dogwood', 'bush'],
+""relationships"": [[0, ""on the right of"", 2],[2,""on the right of"",1]]","A picture of a real landscape with trees including a dogwood, a angelica, shrubs with bush.
+A angelica is on the right of a bush. A bush is on the right of a maple."
+24.jpg,"""objects"": ['acacia','maple', 'bush'],
+""relationships"": [[0, ""on the left of"", 1],[2,""in front of"",1],[2,""in front of"",0]]","A picture of a real landscape with trees including a acacia, a maple, shrubs with bush.
+A acacia is on the left of a maple. A bush is in front of both a acacia and a maple."
+25.jpg,"""objects"": ['acacia','maple', 'bush'],
+""relationships"": [[0, ""on the left of"", 1],[2,""in front of"",1]]","A picture of a real landscape with trees including a acacia, a maple, shrubs with bush.
+A acacia is on the left of a maple. A bush is in front of  a maple."
+26.jpg,"""objects"": ['acacia','maple', 'bush','angelica'],
+""relationships"": [[0, ""on the left of"", 1],[2,""in front of"",1],[2,""in front of"",3],[3,""on the right of"",1]]","A picture of a real landscape with trees including a acacia, a maple and a angelica, shrubs with bush.
+A acacia is on the left of a maple. A bush is in front of both a maple and a angelica. A angelica is on the right of a maple."
+27.jpg,"""objects"": ['acacia','maple', 'bush','angelica'],
+""relationships"": [[0, ""on the left of"", 1],[3,""on the left of"",0],[2,""in front of"",1]]","A picture of a real landscape with trees including a acacia, a maple and a angelica, shrubs with bush.
+A acacia is on the left of a maple. A bush is in front of the maple. A angelica is on the left of a acacia."
+28.jpg,"""objects"": ['acacia','maple', 'bush','angelica','dogwood'],
+""relationships"": [[0, ""on the left of"", 1],[3,""on the right of"",1],[2,""in front of"",1],[2,""in front of"",3],[4,""on the left of"",0]]","A picture of a real landscape with trees including a acacia, a maple, a angelica and a dogwood, shrubs with bush.
+A acacia is on the left of a maple. A bush is in front of both a maple and a angelica. A angelica is on the right of a maple. A dogwood is on the left of a acacia."
+29.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip'],
+""relationships"": [[0, ""on the left of"", 1],[2,""in front of"",0],[3,""in front of"",1]]","A picture of a real landscape with trees including a acacia, a dogwood, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a acacia. A bush is in front a dogwood. A white_tulip is in front of a acacia. "
+30.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip','angelica'],
+""relationships"": [[0, ""on the left of"", 1],[2,""in front of"",0],[3,""in front of"",1],[3,""in front of"",4],[4,""on the right of"",1]]","A picture of a real landscape with trees including a acacia, a dogwood and a angelica, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a acacia. A angelica is on the right of acacia. A bush is in front  a dogwood. A white_tulip is in front of both a acacia and a angelica. "
+31.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip','angelica'],
+""relationships"": [[0, ""on the left of"", 1],[2,""in front of"",0],[3,""in front of"",4],[4,""on the right of"",1]]","A picture of a real landscape with trees including a acacia, a dogwood and a angelica, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a acacia. A angelica is on the right of acacia. A bush is in front  a dogwood. A white_tulip is in front of a angelica. "
+32.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip','angelica'],
+""relationships"": [[0,""on the left of"",4],[2,""in front of"",0],[3,""in front of"",4],[3,""in front of"",1],[4,""on the left of"",1],[4,""behind"",1]]","A picture of a real landscape with trees including a acacia, a dogwood and a angelica, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a angelica. A angelica is on the left of acacia. A bush is in front a dogwood. A white_tulip is in front of both a angelica and a acacia. A angelica is behind a acacia."
+33.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip','maple'],
+""relationships"": [[0, ""on the left of"", 4],[2, ""in front of"", 0],[2,""in front of"",4],[3,""in front of"",1],[4,""on the left of"",1]]","A picture of a real landscape with trees including a acacia, a dogwood and a maple, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a maple. A maple is on the left of acacia. A bush is in front a dogwood and a maple. A white_tulip is in front of both a acacia. "
+34.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip','maple'],
+""relationships"": [[0, ""on the right of"", 4],[2, ""in front of"", 1],[2, ""in front of"", 4],[3, ""in front of"", 1],[4, ""on the right of"", 1]]","A picture of a real landscape with trees including a acacia, a dogwood and a maple, shrubs with a bush and a white_tulip.
+A dogwood is on the right of a maple. A maple is on the right of acacia. A bush is in front a acacia and a maple. A white_tulip is in front  a dogwood. "
+35.jpg,"""objects"": ['dogwood','acacia', 'bush','white_tulip','maple'],
+""relationships"": [[0, ""on the right of"", 3],[4, ""on the left of"", 3],[1, ""on the left of"", 4],[2, ""in front of"", 1],[2, ""in front of"", 4]]","A picture of a real landscape with trees including a acacia, a dogwood and a maple, shrubs with a bush and a white_tulip.
+A dogwood is on the right of a white_tulip. A maple is on the left of a white_tulip. A bush is in front a acacia and a maple. A acacia is on the left of maple."
+36.jpg,"""objects"": ['dogwood','acacia', 'maple','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 1],[1, ""on the left of"", 2],[4, ""in front of"", 0],[4, ""in front of"", 1],[3, ""in front of"", 2]]","A picture of a real landscape with trees including a acacia, a dogwood and a maple, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a acacia. A acacia is on the left of a maple. A bush is in front a dogwood and a acacia. A white_tulip is in front of a maple."
+37.jpg,"""objects"": ['dogwood','acacia','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 1],[3, ""in front of"", 0],[3, ""in front of"", 1],[2, ""on the right of"", 3]]","A picture of a real landscape with trees including a acacia, a dogwood, shrubs with a bush and a white_tulip.
+A dogwood is on the left of a acacia.  A bush is in front a dogwood and a acacia. A white_tulip is on the right of a bush."
+38.jpg,"""objects"": ['angelica','acacia','dogwood','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 1],[1, ""on the left of"", 2],[4, ""in front of"", 0],[4, ""in front of"", 1],[3, ""on the right of"", 4],[2, ""on the right of"", 3]]","A picture of a real landscape with trees including a acacia, a dogwood and a angelica, shrubs with a bush and a white_tulip.
+A angelica is on the left of a acacia.  A bush is in front a angelica and a acacia. A white_tulip is on the right of a bush. A dogwood is on the right of a white_tulip."
+39.jpg,"""objects"": ['angelica','acacia','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 1],[3, ""in front of"", 0],[3, ""in front of"", 1],[2, ""in front of"", 3]]","A picture of a real landscape with trees including a acacia, a angelica, shrubs with a bush and a white_tulip.
+A angelica is on the left of a acacia.  A bush is in front a angelica and a acacia. A white_tulip is in front of a bush."
+40.jpg,"""objects"": ['angelica','acacia','white_tulip','bush'],
+""relationships"": [[3, ""in front of"", 1],[2, ""in front of"", 3],[0, ""on the right of"", 3]]","A picture of a real landscape with trees including a acacia, a angelica, shrubs with a bush and a white_tulip.
+A bush is in front of a acacia.  A angelica is on the right of a bush. A white_tulip is in front of a bush."
+41.jpg,"""objects"": ['angelica','acacia','dogwood','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 1],[1, ""on the left of"", 2],[4, ""in front of"", 0],[4, ""in front of"", 1],[3, ""in front of"", 4],[2, ""on the right of "", 4]]","A picture of a real landscape with trees including a acacia, a angelica and a dogwood, shrubs with a bush and a white_tulip.
+A bush is in front of a acacia and a angelica.  A angelica is on the left of a acacia. A white_tulip is in front of a bush. A dogwood is on the right of a bush."
+42.jpg,"""objects"": ['angelica','acacia','dogwood','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 1],[1, ""on the left of"", 2],[4, ""in front of"", 0],[4, ""in front of"", 1],[3, ""in front of"", 4],[2, ""on the right of "", 4]]","A picture of a real landscape with trees including a acacia, a angelica and a dogwood, shrubs with a bush and a white_tulip.
+A bush is in front of a acacia and a angelica.  A angelica is on the left of a acacia. A white_tulip is in front of a bush. A dogwood is on the right of a bush."
+43.jpg,"""objects"": ['acacia','angelica','dogwood','white_tulip','bush'],
+""relationships"": [[0, ""on the left of"", 4],[0, ""on the left of"", 3],[4, ""in front of"", 1],[3, ""in front of"", 4],[2, ""on the right of"", 3],[2, ""on the right of "", 4]]","A picture of a real landscape with trees including a acacia, a angelica and a dogwood, shrubs with a bush and a white_tulip.
+A acacia is on the left of a bush and a white_tulip. A bush is in front of a angelica, a white_tulip is in front of a bush. A dogwood is on the right of bush and white_tulip."
+44.jpg,"""objects"": ['bougainvillea','acacia','bush','alumroot'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[2, ""in front of"", 1],[3, ""in front of"", 2]]","A picture of a real landscape with trees including a bougainvillea, a acacia, shrubs with a bush and a alumroot.
+A bougainvillea is on the left of a acacia. A bush is in front of a bougainvillea and a acacia. A alumroot is in front of a bush."
+45.jpg,"""objects"": ['bougainvillea','acacia','bush','alumroot'],
+""relationships"": [[0, ""on the right of"", 1],[2, ""in front of"", 1],[3, ""in front of"", 2]]","A picture of a real landscape with trees including a bougainvillea, a acacia, shrubs with a bush and a alumroot.
+A bougainvillea is on the right of a acacia. A bush is in front of a  acacia. A alumroot is in front of a bush."
+46.jpg,"""objects"": ['bougainvillea','acacia','bush','alumroot'],
+""relationships"": [[0, ""on the right of"", 1],[2, ""in front of"", 1],[3, ""in front of"", 0]]","A picture of a real landscape with trees including a bougainvillea, a acacia, shrubs with a bush and a alumroot.
+A bougainvillea is on the right of a acacia. A bush is in front of a  acacia. A alumroot is in front of a bougainvillea."
+47.jpg,"""objects"": ['poinciane','bougainvillea','bush'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 1],[2, ""in front of"", 0]]","A picture of a real landscape with trees including a bougainvillea, a poinciane, shrubs with a bush .
+A poinciane is on the left of a bougainvillea. A bush is in front of a poinciane and a bougainvillea."
+48.jpg,"""objects"": ['poinciane','bougainvillea','bush'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[1, ""on the right of"", 2]]","A picture of a real landscape with trees including a bougainvillea, a poinciane, shrubs with a bush .
+A poinciane is on the left of a bougainvillea. A bush is in front of a poinciane. A bougainvillea is on the right of a bush."
+49.jpg,"""objects"": ['poinciane','bougainvillea','bush','dogwood'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[1, ""on the right of"", 2],[3, ""on the right of"", 1]]","A picture of a real landscape with trees including a bougainvillea, a poinciane and a dogwood, shrubs with a bush .
+A poinciane is on the left of a bougainvillea. A bush is in front of a poinciane. A bougainvillea is on the right of a bush. A dogwood is on the right of a bougainvillea."
+50.jpg,"""objects"": ['poinciane','bougainvillea','bush','dogwood'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[2, ""in front of"", 1],[1, ""on the right of"", 2],[3, ""on the right of"", 1]]","A picture of a real landscape with trees including a bougainvillea, a poinciane and a dogwood, shrubs with a bush.
+A poinciane is on the left of a bougainvillea. A bush is in front of a poinciane and a bougainvillea. A bougainvillea is on the right of a bush. A dogwood is on the right of a bougainvillea."
+51.jpg,"""objects"": ['bougainvillea','poinciane','bush','dogwood','alumroot'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[2, ""in front of"", 1],[1, ""on the right of"", 2],[3, ""on the right of"", 1],[4, ""on the right of"", 3]]","A picture of a real landscape with trees including a bougainvillea, a poinciane and a dogwood, shrubs with a bush and a alumroot.
+A bougainvillea is on the left of a poinciane. A bush is in front of a poinciane and a bougainvillea. A bougainvillea is on the right of a bush. A dogwood is on the right of a bougainvillea. A alumroot in front of a dogwood."
+52.jpg,"""objects"": ['bougainvillea','poinciane','bush','dogwood','alumroot'],
+""relationships"": [[0, ""on the right of"", 1],[2, ""in front of"", 0],[2, ""in front of"", 1],[1, ""on the right of"", 2],[3, ""on the right of"", 1],[4, ""on the right of"", 3]]","A picture of a real landscape with trees including a bougainvillea, a poinciane and a dogwood, shrubs with a bush and a alumroot.
+A bougainvillea is on the right of a poinciane. A bush is in front of a poinciane and a bougainvillea. A bougainvillea is on the right of a bush. A dogwood is on the right of a bougainvillea. A alumroot in front of a dogwood."
+53.jpg,"""objects"": ['poinciane','bush','white_tulip','alumroot','dogwood'],
+""relationships"": [[0, ""on the right of"", 1],[1, ""in front of"", 0],[2, ""in front of"", 1],[3, ""in front of"", 4],[3, ""on the right of"", 1]]","A picture of a real landscape with trees including a bougainvillea, a poinciane and a dogwood, shrubs with a bush and a alumroot.
+A bougainvillea is on the left of a poinciane. A bush is in front of a poinciane and a bougainvillea. A bougainvillea is on the right of a bush. A dogwood is on the right of a bougainvillea. A alumroot in front of a dogwood."
+54.jpg,"""objects"": ['poinciane','bush','white_tulip','alumroot','dogwood'],
+""relationships"": [[0, ""on the right of"", 1],[1, ""in front of"", 0],[2, ""in front of"", 1],[3, ""in front of"", 4],[3, ""on the right of"", 1]]","A picture of a real landscape with trees including a poinciane and a dogwood, shrubs with a bush, a white_tulip and a alumroot.
+A poinciane is on the right of a bush. A bush is in front of a poinciane. A alumroot is in front of a dogwood. A white_tulip is in front of a bush. A alumroot is on the right of a bush."
+55.jpg,"""objects"": ['poinciane','bush','white_tulip','alumroot','dogwood'],
+""relationships"": [[0, ""on the right of"", 1],[1, ""in front of"", 0],[2, ""in front of"", 1],[3, ""in front of"", 2],[4, ""on the right of"", 0]]","A picture of a real landscape with trees including a poinciane and a dogwood, shrubs with a bush, a white_tulip and a alumroot.
+A poinciane is on the right of a bush. A bush is in front of a poinciane. A alumroot is in front of a white_tulip. A white_tulip is in front of a bush. A dogwood is on the right of a poinciane."
+56.jpg,"""objects"": ['bougainvillea','poinciane','bush','white_tulip'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[3, ""in front of"", 1]]","A picture of a real landscape with trees including a poinciane and a bougainvillea, shrubs with a bush, a white_tulip.
+A bougainvillea is on the left of a poinciane. A bush is in front of a bougainvillea. A white_tulip is in front of a poinciane. "
+57.jpg,"""objects"": ['bougainvillea','poinciane','bush','white_tulip','alumroot'],
+""relationships"": [[0, ""on the left of"", 1],[2, ""in front of"", 0],[3, ""in front of"", 1],[4, ""in front of"", 2]]","A picture of a real landscape with trees including a poinciane and a bougainvillea, shrubs with a bush, a white_tulip and a alumroot.
+A bougainvillea is on the left of a poinciane. A bush is in front of a bougainvillea. A white_tulip is in front of a poinciane. A alumroot is in front of a bush."
