@@ -1,10 +1,10 @@
 <template>
   <!--  <div style="display:flex;background-color: rgb(238, 238, 232); padding: 15px">-->
-  <div style="display:flex;background-color: #efefe8; padding: 15px; border-radius: 27px;">
+  <div style="display:flex;background-color: #efefe8; padding: 5px; border-radius: 27px;">
     <div>
       <GraphView :graphData="graphData" class="view" style="height:calc(40vh - 25px);" @new_box="new_box"></GraphView>
       <br>
-      <LayoutView :layoutData="layoutData" ref="layoutView" class="view" style="height:calc(60vh - 25px);" ></LayoutView>
+      <LayoutView :layoutData="layoutData" ref="layoutView" class="view" style="height:calc(60vh - 25px);"></LayoutView>
     </div>
 
 

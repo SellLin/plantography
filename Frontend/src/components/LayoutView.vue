@@ -103,7 +103,7 @@
         </div>
 
         <!--  main  graph-->
-        <div style="background: #ffffff; height: 52vh; border-radius: 18px; overflow: hidden; box-sizing: border-box; padding: 14px; margin-left: 9px">
+        <div style="background: #ffffff; height: 51vh; border-radius: 18px; overflow: hidden; box-sizing: border-box; padding: 14px; margin-left: 9px">
           <svg
             ref="layoutView"
             style="width: 100%; height: 100%; border: 1px solid #f0f0f0; border-radius: 18px;"
